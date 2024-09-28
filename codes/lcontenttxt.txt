@@ -1,0 +1,42 @@
+<!-- Fichier de chargement HTML -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<meta name="headerFontColor" content="#FFFFFF" />
+			<meta name="headerBackColor" content="#89205b" />
+			<meta name="googleSearch"    content="false" />
+			<title>Load content txt</title>
+			<script type="text/javascript" src="../mep/skin.js"></script>
+			<script type="text/javascript">
+			<!--
+				function getText() {
+					var sContent = "";
+					
+					if (document.body.innerText) {
+						sContent = window.idFrame.document.body.innerText;
+					} else {
+						sContent = window.idFrame.document.body.innerHTML;
+						sContent = sContent.substring(5, sContent.length - 6);
+					}
+					document.getElementById("output").innerHTML = sContent;
+				}
+			//-->
+			</script>
+		</head>
+		
+		<body>
+			<p id="main">
+				<iframe src="#" name="idFrame" id="idFrame" width="200" height="150" onload="getText();" style="display: none;"></iframe>
+				
+				<a target="idFrame" href="iFrameLoading.txt">Charger le fichier avec <code>target</code></a> - 
+				<a onclick="document.getElementById('idFrame').src = 'iFrameLoading.txt';">Charger le fichier sans <code>target</code></a>
+				
+				<p id="output"></p>
+			</p>
+		</body>
+	</html>
+
+<!-- Fichier contenant le texte (d'extension .txt) -->
+Le rock 'n' roll (également écrit rock & roll, rock and roll) est un genre musical, ayant émergé aux États-Unis à la fin des années 1940 et au début des années 1950, découlant
+directement du rhythm and blues, musique populaire métissée, avec une part d'influence de la musique country, musique populaire rurale.

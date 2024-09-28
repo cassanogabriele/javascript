@@ -1,0 +1,22 @@
+﻿<!-- jQuery -->			
+<script type="text/javascript">
+(function($){
+	$('document').ready(function(){	
+		// lt = less than : sélectionner tous les éléments à indice inférieur à l'index
+		$("p:gt(2))").css("border","2px solid red");
+	});
+})(jQuery);	
+</script>
+
+<!-- HTML -->	
+<div class="panel-body">
+	<div class="cv-wrapper">
+		<div class="center">																
+			<p>Ceci est un 1er paragraphe</p>
+			<p>Ceci est un 2ème paragraphe</p>
+			<p>Ceci est un 3ème paragraphe</p>
+			<p>Ceci est un 4ème paragraphe</p>			
+		</div>
+	</div>												
+</div>
+	

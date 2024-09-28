@@ -1,0 +1,35 @@
+<!-- JavaScript -->
+<script type="text/javascript">										
+var compteur = 1;
+var interv;
+var encours;
+
+function incrementer(){
+	compteur++;
+	document.formulaire.heure.value=compteur;
+}
+
+function appui(){
+	if(encours == 1){
+		clearInterval(interv);
+		document.formulaire.bouton.value = "Reprendre";
+		encours = 0;
+	} else{
+		interv = setInterval("incrementer()",100);
+		document.formulaire.bouton.value = "Arrêter";
+		encours = 1;
+	}
+}
+
+function init(){
+	// (pas de démarrage auto) interv = setInterval("incrementer()",100);
+	document.formulaire.bouton.value = "Commencer";
+}									
+</script>
+
+
+<!-- HTML -->
+<form name="formulaire" id="formulaire-minuterie">
+	<input type="text" value="" name="heure" onclick="incrementer();" id="input-style"/>												
+	<input type="button" value="Arreter" onclick="appui();" name="bouton" />
+</form>

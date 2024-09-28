@@ -1,0 +1,19 @@
+<!-- jQuery -->
+<script>
+(function($){
+$('document').ready(function(){	
+	// Mettre le texte ":INPUT" devant chaque champs de formulaire "input" 
+	$(":input").before(":INPUT ");
+	});
+})(jQuery);	
+</script>
+
+
+<!-- HTML -->
+<div class="center">																
+	<form action="/action_page.php">
+		Nom <input type="text" name="fname"><br>
+		Prénom <input type="text" name="lname"><br>
+		<input type="submit" value="Envoyer">
+	</form> 
+</div>

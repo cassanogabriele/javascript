@@ -1,0 +1,20 @@
+<!-- jQuery -->
+<script>
+(function($){
+(function($){
+$('document').ready(function(){	
+	// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+	$(":text").before(":TEXT ");
+	});
+})(jQuery);	
+</script>
+
+
+<!-- HTML -->
+<div class="center">																
+	<div class="center">														
+		<input type="text" name="fname">
+		<br>
+		<input type="text" name="lname">												
+	</div>	
+</div>

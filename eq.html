@@ -1,0 +1,44 @@
+﻿<html> 
+	<head>
+        <meta charset="utf-8">
+        <title>eq</title>
+        <meta name="description" content="Site pour jeune développeur désireux d'apprendre le JavaScript et le jQuery">
+        <meta name="author" content="Gabriele Cassano">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">        
+        
+        <link rel="stylesheet" href="css/bootstrap.css">        
+        <link rel="stylesheet" href="css/font-awesome.min.css">        
+        <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="owl-carousel/owl.theme.css">        
+        <link rel="stylesheet" href="lightbox/nivo-lightbox.css">
+        <link rel="stylesheet" href="lightbox/default/default.css">                 
+        <link rel="stylesheet" href="css/main.css">        
+        <link rel="stylesheet" href="css/colorscheme-0.css">        
+        <link rel="stylesheet" href="css/animate.css">		
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700' rel='stylesheet' type='text/css'>  
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		
+		<script>
+		(function($){
+			$('document').ready(function(){	
+				// Sélectionne le premier élément et le troisième élément et ainsi de suite (cela se base sur l'index qui commence à "0")
+				$("p").eq(2).css("border","2px solid red");
+			});
+		})(jQuery);		
+		</script>
+    </head> 
+	
+    <body>
+		<div class="panel-body">
+			<div class="cv-wrapper">
+				<div class="center">																
+					<p>Ceci est un 1er paragraphe</p>
+					<p>Ceci est un 2ème paragraphe</p>
+					<p>Ceci est un 3ème paragraphe</p>
+					<p>Ceci est un 4ème paragraphe</p>					
+				</div>
+			</div>												
+		</div>
+    </body>
+</html>

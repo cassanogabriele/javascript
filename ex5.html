@@ -1,0 +1,56 @@
+<!doctype html>
+	<html lang="fr" ng-app>
+		<head>
+			<meta charset="UTF-8">
+				<title>Exercice 5 AngularJS</title>
+					<script src="libraries/angular.min.js"></script>
+					<script>
+					monControleur=function($scope)
+					{
+						$scope.tabSerie=[
+						{
+							titre:"Le Tr\364ne de fer",
+							titreOr:"Game of Thrones",
+							createur:" David Benioff et D. B. Weiss",
+							urlImage:"img/got.jpg",
+							etat:"en cours saison 04 diffus\351e au printemps 2014"
+						},
+
+						{
+							titre:"Lost : Les Disparus",
+							titreOr:"Lost",
+							createur:"J. J. Abrams, Damon Lindelof et Jeffrey Lieber",
+							urlImage:"img/lost.jpg",
+							etat:"termin\351e"
+						},
+
+						{
+							titre:"Homeland",
+							titreOr:"Homeland",
+							createur:"Howard Gordon et Alex Gansa",
+							urlImage:"img/homeland.jpg",
+							etat:"en cours, saison 03 diffus\351e en septembre 2013"
+						}
+						]
+					}
+					</script>
+					<link rel="stylesheet" href="css/ex5.css">
+		</head>
+
+			<body ng-controller="monControleur">
+				<h1 id="monTitre">S&eacute;rie en s&eacute;rie</h1>
+					<div class="row" id="mesSeries" ng-repeat="serie in tabSerie">
+						
+						<div class="offset5 span2">
+							<img ng-src="{{serie.urlImage}}"/> 
+						</div>	
+							
+							<div class="span5">
+								<h2>{{serie.titre}}</h2>
+								<p>Titre original : {{serie.titreOr}}</p>
+								<p>Cr&eacute;ateur(s) : {{serie.createur}}</p>
+								<p>Etat : {{serie.etat}}</p>
+							</div>	
+					</div>	
+			</body>
+    </html>			

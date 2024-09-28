@@ -1,0 +1,12 @@
+.bleu body{
+	background:#20b9e5 url(bleu/fond-bleu.gif) repeat-x;
+}
+
+.bleu select{
+	background:#20b9e5;
+}
+
+.bleu h1{
+	color:#20b9e5;
+	text-align:center;
+}

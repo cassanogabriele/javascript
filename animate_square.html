@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#start").click(function(){
+        $("div").animate({left: '100px'}, 5000);
+        $("div").animate({fontSize: '3em'}, 5000);
+    });
+  
+    $("#stop").click(function(){
+        //$("div").finish();
+        $("div").clearQueue().stop();
+    });
+
+    $("#stop2").click(function(){
+        $("div").stop(true);//= stop all
+    });
+
+    $("#stop3").click(function(){
+        $("div").stop(true, true);//stop all, goto end
+    }); 
+
+    $("#stop4").click(function(){
+        $("div").finish();//stop all, goto end all animations
+    }); 
+});
+</script> 
+</head>
+<body>
+<p>
+<button id="start">Démarrer</button>
+<button id="stop">Arrêter</button>
+<button id="stop2">Arrêter tout</button>
+<button id="stop3">Aller à la fin</button>
+<button id="stop4">Finish</button>
+</p>
+
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;" >Animate Jquery</div>
+
+
+</body>
+</html>

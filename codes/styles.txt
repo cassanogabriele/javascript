@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /> 
+			<title>Commutateur de feuille de style</title>
+			
+			<link rel="stylesheet" href="css/bootstrap.css"> 
+			<link rel="stylesheet" href="css/main.css"> 
+			<link rel="stylesheet" href="css/style.css" type="text/css" />
+			<link rel="stylesheet" href="css/bleu.css" type="text/css" />
+			<link rel="stylesheet" href="css/main.css" type="text/css" />
+			<link rel="stylesheet" href="css/rouge.css" type="text/css" />
+			
+			<script type="text/javascript">
+			/* Récupération du cookie */
+			var cook = getCookie("style");
+				
+			/* Si un cookie existe on affiche la feuille de style sauvegardée dans le cookie,
+			   sinon on met une feuille de style par défaut (ici rouge.css) */
+			if(cook == undefined)
+				document.documentElement.className = "rouge";
+			else
+				document.documentElement.className = cook;
+				
+			function setCookie(name, value, expire){
+				var timestamp = new Date(expire);
+				document.cookie = name + "=" + escape(value) + "; expires=" + timestamp.toGMTString();
+			}
+				
+			function getCookie(name){
+				var cookies = document.cookie.split(/;/);
+					
+				for(var i = 0; i < cookies.length; i++ ){
+					var mycook = cookies[i].split(/=/);
+					if(mycook[0] == name)
+						return unescape(mycook[1]);
+				}
+			}
+				
+			function styleSwitcher(css){
+				document.documentElement.className = css;
+				/* Création du cookie */
+				setCookie("style", css, (new Date(2020, 12).getTime()));
+			}
+				
+			function setSelected(){
+				var options = document.getElementById('style').getElementsByTagName('option');
+				var n = options.length;
+					
+				for(var i = 0; i < n; i++ ){
+					if(options[i].value == cook)
+					options[i].selected = true;
+				}
+			}
+			</script>
+		</head>
+	
+		<body onload="setSelected()">
+
+		<div id="main">
+			<h1 style="color:white;">Commutateur de feuille de style</h1>
+			
+			<div class="text-center">
+				<select onchange="styleSwitcher(this.value)" id="style">
+					<option value="rouge">Rouge</option>
+					<option value="bleu">Bleu</option>
+				</select>
+			</div>
+		</div>
+		</body>
+	</html>

@@ -1,0 +1,69 @@
+﻿<script language="javascript">                  
+function validate(){
+  if( document.myForm.Name.value == "" ){
+    alert( "Entre votre nom, svp !" );
+    document.myForm.Name.focus() ;
+    return false;
+}
+                       
+if( document.myForm.EMail.value == "" ){
+  alert( "Entrez votre email, svp !" );
+  document.myForm.EMail.focus() ;
+  return false;
+}
+                       
+if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) || document.myForm.Zip.value.length != 5 ){
+  alert( "Entrez votre code postal, svp !" );
+  document.myForm.Zip.focus() ;
+  return false;
+}
+                       
+if( document.myForm.Country.value == "-1" ) {
+  alert( "Entrez votre pays, svp!" );
+  return false;
+ }
+                      
+ return( true );
+}
+</script> 
+
+
+<form action="/cgi-bin/test.cgi" name="myForm" onsubmit="return(validate());">
+   <table class="table table-inverse">
+       <thead>
+          <tr>
+            <td align="right">Nom</td>
+            <td><input type="text" name="Name" /></td>
+          </tr>                           
+        </thead>
+                          
+         <tbody>
+            <tr>
+               <td align="right">EMail</td>
+                <td><input type="text" name="EMail" /></td>
+            </tr>
+                          
+            <tr>
+                <td align="right">Code postal</td>
+                <td><input type="text" name="Zip" /></td>
+            </tr>
+                          
+            <tr>
+              <td align="right">Pays</td>
+              <td>
+                  <select name="Country">
+                      <option value="-1" selected>[choisissez votre pays]</option>
+                      <option value="1">Belgique</option>
+                      <option value="2">Allemagne</option>
+                      <option value="3">Russie</option>
+                   </select>
+                </td>
+            </tr>
+                          
+            <tr>
+              <td align="right"></td>
+              <td><input class="btn btn-default btn-large" type="submit" value="Envoyer" /></td>
+             </tr>
+          </tbody>
+  </table>
+ </form>

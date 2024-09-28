@@ -1,0 +1,57 @@
+<!-- jQuery -->
+$(document).ready(function(){
+	$("#menu").hide();
+		$("#myBtn").click(function(){
+			//pas besoin de show / hide et de variable tierce booléenne
+			$("#menu").toggle();
+				$("#myBtn").text() == "Menu" ? $("#myBtn").text("Close") : $("#myBtn").text("Menu");
+				
+		});
+});
+
+<!-- CSS -->
+<style>
+	#myBtn{
+		background:black;
+		width:40px;
+		height:20px;
+		padding:4px;
+		color:#fff;
+		text-align:center;
+		cursor:pointer;
+
+	}
+	#menu{
+
+		list-style:none;
+		padding:10px 0 ;
+		margin:0;
+		background:black;
+		width:110px;
+	}
+	#menu li a{
+
+		display:block;
+		text-decoration:none;
+		color:#fff;
+		padding:5px;
+	}
+	#menu li a:hover{
+		background:grey;
+	}
+</style>
+
+
+<!-- HTML -->
+<body>
+Un menu qui apparaît et disparaît
+<br>
+------------------------------------------------- 
+<br><br>
+
+<div onclick="openMenu(this)" onmouseup="mOut(this)" id="myBtn">Menu</div>
+<ul id="menu">
+	<li><a href="http://profilprofessionnel.com">Profil professionnel</a></li>
+	<li><a href="http://guitarlearning.site/">Guitare Learning</a></li>
+	<li><a href="http://titansclub.eu/">Titans Club</a></li>	
+</ul>

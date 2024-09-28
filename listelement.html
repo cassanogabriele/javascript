@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<link rel="stylesheet" href="css/main.css"> 
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script language="JavaScript">
+		(function($){
+			$('document').ready(function(){	
+				// Sélectionner l'élément "p" directement précédé d'un élément ul et leur mettre une bordure rouge
+				$('ul + p').css('border','2px solid red');																						
+			});
+		})(jQuery);
+		</script>
+    </head>
+	
+        <body>
+			<div class="center" style="margin-top:25px;">
+				<div id="container">
+					<ul id="list3">
+						<li>Élément de liste 1</li>
+						<li>Élément de liste 2</li>
+						<li>Élément de liste 3</li>
+						<li>Élément de liste 4</li>												
+					</ul>
+					<p>Ceci est un 1er paragraphe</p>
+					<p>Ceci est un 2ème paragraphe</p>
+					<p>Ceci est un 3ème paragraphe</p>
+					<p>Ceci est un 4ème paragraphe</p>
+					<p>Ceci est un paragraphe caché</p>
+				</div>
+			</div>		
+		</body>   
+</html>

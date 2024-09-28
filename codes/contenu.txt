@@ -1,0 +1,40 @@
+﻿<!-- jQuery -->
+<script>
+(function($){
+	$('document').ready(function(){	
+		// Mettre le texte ":INPUT" devant chaque champs de formulaire "input" 
+		$(":input").before(":INPUT ");
+		// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+		$(":text").before(":TEXT ");
+		// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+		$(":radio").before(":RADIO ");
+		// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+		$(":checkbox").before(":CHECKBOX ");
+		
+		
+	});
+})(jQuery);	
+</script>
+
+
+<!-- HTML -->
+<div class="center">						
+	// Mettre le texte ":INPUT" devant chaque champs de formulaire "input"	
+	<input type="number" name="fname">
+	<br>
+	<input type="number" name="lname">	
+	
+	// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+	<input type="text" name="fname">
+	<br>
+	<input type="text" name="lname">
+	
+	// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+	<input type="radio" id="radioButton">
+	<br>
+	<input type="radio" id="radioButton">	
+	
+	// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+	<input type="checkbox" name="vehicle" value="Bike">J'ai un vélo<br>
+	<input type="checkbox" name="vehicle" value="Car" checked> J'ai une voiture<br>		
+</div>

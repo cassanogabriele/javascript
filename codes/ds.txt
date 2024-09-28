@@ -1,0 +1,112 @@
+<!-- jQuery -->
+<script>
+$(document).ready(function(){
+   var myDiv;
+   $("#iForm").hide();
+   $("#iForm2").hide();
+
+   $("#start").click(
+      function(){
+        $(this).attr("disabled","disabled");
+        $("#iForm").slideDown(500);
+      
+               
+      });
+   
+   $("#sendValues").click(
+    function(){
+      var iHeight = $("#iHeight").val();
+      var iWidth = $("#iWidth").val();
+
+      if(isNaN(iHeight) || iHeight =="" || iHeight== " " || isNaN(iWidth) || iWidth =="" || iWidth== " ") {
+        $('#iForm').find('.error').text("Veuillez entrer un nombre");
+      } else {        
+            myDiv = $('<div id="myRec"></div>').width(iWidth).height(iHeight).css({"backgroundColor":"orange","margin":"50px"});
+            
+            $("#result").append(myDiv).hide().fadeIn("slow",function(){
+               $('#iForm').slideUp();
+               $('#iForm2').slideDown();
+
+            });
+            
+             
+      }
+    });
+
+   $("#sendNewValues").click(
+    function(){
+      var nHeight = $("#nHeight").val();
+      var nWidth = $("#nWidth").val();
+
+      if(isNaN(nHeight) || nHeight =="" || nHeight== " " || isNaN(nWidth) || nWidth =="" || nWidth== " ") {
+        $('#iForm').find('.error').text("Veuillez entrer un nombre");
+      } else {        
+            $('#iForm2').hide();
+            myDiv.animate({
+              width:nWidth,
+              height:nHeight
+            },900);
+             
+      }
+    });
+});   	 
+</script>
+
+<!-- CSS -->
+<style>
+  body{text-align:center;}
+  div{margin:auto;width:960px;text-align: left;}
+    input{
+      border:1px solid #ccc;
+      font-family: sans-serif;
+      color:#888;
+      padding:5px;
+      font-size:16px;
+    }
+    label{
+      font-family: sans-serif;
+      font-size:14px;
+    }
+    button{
+      border:0px solid #fff;
+      background:#888;
+      color:#fff;
+      padding:8px 12px ;
+      font-size:15px;
+      cursor:pointer;
+    }
+</style>
+
+
+<!-- HTML -->
+<body>
+
+
+<button id="start">Créer un rectangle</button>
+<div id="iForm">
+  <p>
+    <label for="iWidth">Entrez la largeur</label><br>
+    <input type="text" id="iWidth" autofocus="autofocus" tabindex="1">
+  </p>
+  <p>
+    <label for="iHeight">Entrez la hauteur</label><br>
+    <input type="text" id="iHeight" tabindex="2">
+  </p>
+  <span class="error"></span><br>
+  <button id="sendValues" >OK</button>
+</div>
+<div id="result"></div>
+<div id="iForm2">
+  
+  <p>
+    <label for="nWidth">Entrez la nouvelle largeur</label><br>
+    <input type="text" id="nWidth" >
+  <p>
+    <label for="nHeight">Entrez la nouvelle hauteur</label><br>
+    <input type="text" id="nHeight">
+  </p>
+  <span class="error"></span>
+  <button id="sendNewValues" >OK</button>
+</div>
+</body>
+

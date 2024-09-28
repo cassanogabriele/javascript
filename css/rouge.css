@@ -1,0 +1,12 @@
+.rouge body{
+	background:#e52c18 url(rouge/fond-rouge.gif) repeat-x;
+}
+
+.rouge select{
+	background:#e52c18;
+}
+
+.rouge h1{
+	color:#e52c18;
+	text-align:center;
+}

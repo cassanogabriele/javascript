@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bds>
+	<!-- LES TUNIQUES BLEUES -->
+	<serie name="Les Tuniques Bleues" interest="5" id="les-tuniques-bleues">
+		<bd num="1" title="Un chariot dans l'Ouest"/>
+		<bd num="2" title="Du Nord au Sud"/>
+		<bd num="3" title="Et pour 1500 dollars de plus"/>
+		<bd num="4" title="Outlaw"/>
+		<bd num="5" title="Les déserteurs"/>
+		<bd num="6" title="La prison de Robertsonville"/>
+		<bd num="7" title="Les Bleus dans la marine"/>
+		<bd num="8" title="Les cavaliers du ciel"/>
+		<bd num="9" title="La grande patrouille"/>
+		<bd num="10" title="Des Bleus et des tuniques"/>
+		<bd num="11" title="Des Bleus en noir et blanc"/>
+		<bd num="12" title="Les Bleus tournent cosaques"/>
+		<bd num="13" title="Les Bleus dans la gadoue"/>
+		<bd num="14" title="Le blanc-bec"/>
+		<bd num="15" title="Rumberley"/>
+		<bd num="16" title="Bronco Benny"/>
+		<bd num="17" title="El Padre"/>
+		<bd num="18" title="Blue Retro"/>
+		<bd num="19" title="Le David"/>
+		<bd num="20" title="Black Face"/>
+		<bd num="21" title="Les cinq salopards"/>
+		<bd num="22" title="Des Bleus et des dentelles"/>
+		<bd num="23" title="Les cousins d'en face"/>
+		<bd num="24" title="Baby blue"/>
+		<bd num="25" title="Des Bleus et des bosses"/>
+		<bd num="26" title="L'or du Québec"/>
+		<bd num="27" title="Bull Run"/>
+		<bd num="28" title="Les Bleus de la balle"/>
+		<bd num="29" title="En avant l'amnésique"/>
+		<bd num="30" title="La Rose de Bantry"/>
+		<bd num="31" title="Drummer boy"/>
+		<bd num="32" title="Les Bleus en folie"/>
+		<bd num="33" title="Grumbler et fils"/>
+		<bd num="34" title="Vertes années"/>
+		<bd num="35" title="Captain Nepel"/>
+		<bd num="36" title="Quantrill"/>
+		<bd num="37" title="Duel dans la Manche"/>
+		<bd num="38" title="Les planqués"/>
+		<bd num="39" title="Puppet Blues"/>
+		<bd num="40" title="Les hommes de paille"/>
+		<bd num="41" title="Les Bleus en cavale"/>
+		<bd num="42" title="Qui veut la peau du général ?"/>
+		<bd num="43" title="Des Bleus et du blues"/>
+		<bd num="44" title="L'oreille de Lincoln"/>
+		<bd num="45" title="Émeutes à New York"/>
+		<bd num="46" title="Requiem pour un Bleu"/>
+		<bd num="47" title="Les Nancy Hart"/>
+		<bd num="48" title="Arabesque"/>
+		<bd num="49" title="Mariage à Fort Bow"/>
+		<bd num="50" title="La traque"/>
+		<bd num="51" title="Stark sous toutes les coutures"/>
+		<bd num="52" title="Des Bleus dans le Brouillard"/>	
+		<bd num="53" title="Sang bleu chez les bleus"/>	
+		<bd num="54" title="Miss Walker"/>	
+		<bd num="55" title="Indien, mon frère" price="6,50€"/>	
+		<bd num="56" title="Dent pour dent" price="9,54€"/>	
+	</serie>
+	<!-- LES FEMMES EN BLANC -->
+	<serie name="Les Femmes en blanc" interest="5" id="les-femmes-en-blanc">
+		<bd num="1" title="Les Femmes en Blanc"/>
+		<bd num="2" title="Gaze à tous les étages"/>
+		<bd num="3" title="Superpiquées"/>
+		<bd num="4" title="Les jeunes filles opèrent"/>
+		<bd num="5" title="J'étais infirme hier"/>
+		<bd num="6" title="Gai rire à tout prix"/>
+		<bd num="7" title="Pinces, sang, rires"/>
+		<bd num="8" title="Six foies neufs"/>
+		<bd num="9" title="Piquées de grève"/>
+		<bd num="10" title="Machine à coudre"/>
+		<bd num="11" title="Sang dessus dessous"/>
+		<bd num="12" title="Coeur d'artiste chaud"/>
+		<bd num="16" title="Elle met mal l'alèse"/>
+		<bd num="17" title="Le drain sifflera trois fois"/>
+		<bd num="19" title="L'aorte sauvage"/>
+		<bd num="24" title="Si le coeur vous en dit"/>
+		<bd num="25" title="Lésions étrangères"/>
+		<bd num="26" title="Opération en bourse"/>
+		<bd num="27" title="Viscères au poing"/>
+		<bd num="28" title="Invité donneur"/>
+		<bd num="30" title="Overdose"/>
+		<bd num="34" title="Lavez Maria"/>
+	</serie>
+	<!-- ROCHESTER -->
+	<serie name="Les Rochester" interest="2" id="rochester">
+		<bd num="4" title="Fantômes et marmelade"/>
+	</serie>
+	<!-- BUNKER -->
+	<serie name="Bunker" type="saga" interest="5" id="bunker">
+		<bd num="1" title="Les frontières interdites"/>
+		<bd num="2" title="Point zéro"/>
+		<bd num="3" title="Réminiscences"/>
+		<bd num="4" title="Carnages"/>
+		<bd num="5" title="Le mal des montagnes"/>
+	</serie>	
+	<!-- JUDITH -->
+	<serie name="Judith" type="saga" interest="5" id="judith">
+		<bd num="1" title="Volume 1"/>
+		<bd num="2" title="Volume 2"/>
+	</serie>
+	<!-- LES PROFS -->
+	<serie name="Les Profs" interest="5" id="les-profs">
+		<bd num="1" title="interro surprise"/>
+		<bd num="2" title="loto et colles"/>
+		<bd num="3" title="tohu-bahut"/>
+		<bd num="4" title="rentrée des artistes"/>
+		<bd num="5" title="chute des cours"/>
+		<bd num="6" title="classe touriste"/>
+		<bd num="7" title="mise en examen"/>
+		<bd num="8" title="fenêtre sur cours"/>
+		<bd num="9" title="rythme scolaire"/>
+		<bd num="10" title="motivation : 10/10" price="9,14€"/>
+		<bd num="11" title="tableau d'horreur" price="6,50€"/>	
+		<bd num="12" title="grève party" price="10,75€"/>	
+		<bd num="13" title="devoir surveillé" price="9,14€"/>	
+		<bd num="14" title="buzz scolaire" price="6,50€"/>		
+	</serie>
+	<!-- LE PETIT SPIROU -->
+	<serie name="Le Petit Spirou" interest="5" id="le-petit-spirou">
+		<bd num="1" title="Dis bonjour à la dame !"/>
+		<bd num="2" title="Tu veux mon doigt ?"/>
+		<bd num="3" title="Mais ! Qu'est-ce que tu fabriques ?"/>
+		<bd num="4" title="C'est pour on bien !"/>
+		<bd num="5" title="Merci qui ?"/>
+		<bd num="6" title="N'oublie pas ta capuche !"/>
+		<bd num="7" title="Demande à ton père !"/>
+		<bd num="8" title="T'as qu'à t'retenir !"/>		
+		<bd num="9" title="C'est pas de ton âge !"/>
+		<bd num="10" title="Tu comprendras quand tu s'ras grand !"/>	
+		<bd num="11" title="Tu ne s'ras jamais grand !"/>
+		<bd num="12" title="C'est du joli !"/>
+		<bd num="13" title="Fais de beaux rêves !"/>
+		<bd num="14" title="Bien fait pour toi !"/>
+		<bd num="15" title="Tiens-toi droit !"/>
+		<bd num="16" title="T'es gouflé !"/>
+	</serie>	
+	<!-- LES PSY -->
+	<serie name="Les Psy" interest="5" id="les-psy">
+		<bd num="1" title="Quel est votre problème ?"/>
+		<bd num="4" title="J'ai pas le moral"/>
+		<bd num="6" title="Eh bien voilà..."/>
+		<bd num="7" title="Chacun son tour !"/>
+		<bd num="7" title="Chacun son tour !"/>
+		<bd num="8" title="Areuh !."/>
+		<bd num="9" title="On se calme !"/>
+		<bd num="10" title="Et à part ça ?"/>
+		<bd num="11" title="°°°"/>
+		<bd num="12" title="Je suis moche !"/>
+		<bd num="13" title="Vous disiez ?"/>
+		<bd num="14" title="Zen"/>
+		<bd num="15" title="Je m'aime"/>
+		<bd num="16" title="Besoin de vacances !"/>
+		<bd num="17" title="Pourquoi un psy ?"/>
+		<bd num="18" title="Tout baigne !" price="10,45€"/>
+	</serie>	
+	<!-- LE DONJON DE NAHEULBEUK -->
+	<serie name="Le Donjon de Naheulbeuk" interest="5" id="le-donjon-de-naheulbeuk">
+		<bd num="1" title="Première saison, Tome I"/>
+		<bd num="2" title="Première saison, Tome II"/>
+		<bd num="3" title="Deuxième saison, Tome I"/>
+		<bd num="4" title="Deuxième saison, Tome II"/>
+		<bd num="5" title="Deuxième saison, Tome III"/>
+		<bd num="6" title="Deuxième saison, Tome IV"/>
+		<bd num="7" title="Troisième saison, Tome I"/>
+		<bd num="8" title="Troisième saison, Tome II"/>
+		<bd num="9" title="Troisième saison, Tome III (Édition limitée)"/>
+		<bd num="10" title="Quatrième saison,Tome I"/>
+		<bd num="11" title="Quatrième saison, Tome II"/>
+		<bd num="12" title="Quatrième saison, Tome III"/>
+	</serie>
+	<!-- LES ARCANES DE NAHEULBEUK -->
+	<serie name="Les Arcanes de Naheulbeuk" interest="5" id="les-arcanes-de-naheulbeuk">
+		<bd num="1" title="Bière, Monstre et Bière"/>
+		<bd num="2" title="Des Boudins et des Elfes"/>
+		<bd num="3" title="La Vie d'Aventurier"/>
+	</serie>	
+	<!-- AGENT 212 -->
+	<serie name="L'Agent 212" interest="5" id="agent-212">
+		<bd num="1" title="24 heures sur 24"/>
+		<bd num="2" title="Au nom de la loi"/>
+		<bd num="3" title="Sens interdit"/>
+		<bd num="4" title="Voie sans issue"/>
+		<bd num="5" title="Poulet aux amendes"/>
+		<bd num="6" title="Ronde de nuit"/>
+		<bd num="7" title="Un flic à l'ombre"/>
+		<bd num="8" title="Pas de panique"/>
+		<bd num="9" title="Brigade mobile"/>
+		<bd num="10" title="Agent trouble"/>
+		<bd num="11" title="Sifflez dans le ballon !"/>
+		<bd num="12" title="Riz, ô poulet"/>
+		<bd num="13" title="Un flic flanche"/>
+		<bd num="14" title="Sauté de poulet"/>
+		<bd num="15" title="L'Appeau de l'ours"/>
+		<bd num="16" title="Flic… aïe !"/>
+		<bd num="17" title="Poulet sans selle"/>
+		<bd num="18" title="Poulet rôti"/>
+		<bd num="19" title="Cuisses de poulet"/>
+		<bd num="20" title="Chair de poule"/>
+		<bd num="21" title="Ailes de poulet"/>
+		<bd num="22" title="Brigade des eaux"/>
+		<bd num="23" title="Poulet en gelée"/>
+		<bd num="24" title="Agent de poche"/>
+		<bd num="25" title="L'Agent prend la pose"/>
+		<bd num="26" title="À l'eau police"/>	
+		<bd num="27" title="Fauve qui peut !"/>	
+		<bd num="28" title="Effet monstre"/>	
+	</serie>
+	<!-- KID PADDLE -->
+	<serie name="Kid Paddle" interest="4" id="kid-paddle">
+		<bd num="1" title="Jeux de vilains"/>
+		<bd num="2" title="Carnage total"/>
+		<bd num="3" title="Apocalypse boy"/>
+		<bd num="4" title="Full metal casquette"/>
+		<bd num="5" title="Alien chantilly"/>
+		<bd num="6" title="Rodéo blork"/>
+		<bd num="7" title="Waterminator"/>
+		<bd num="8" title="Paddle..My name is Kid Paddle"/>
+		<bd num="9" title="Boing ! Boing ! Bunk !"/>
+		<bd num="10" title="Dark, j'adore !"/>
+		<bd num="11" title="Le retour de la momie qui pue, qui tue"/>
+		<bd num="12" title="Panik room"/>	
+	</serie>
+	<!-- GAME OVER -->
+	<serie name="Game Over" interest="4" id="game-over">
+		<bd num="2" title="No problemo"/>
+	</serie>
+	<!-- JOHAN ET PIRLOUIT -->
+	<serie name="Johan et Pirlouit" interest="2" id="johan-et-pirlouit">
+		<bd num="4" title="La pière de lune"/>	
+		<bd num="8" title="Le sire de montrésor"/>	
+		<bd num="14" title="La horde du corbeau"/>
+	</serie>
+	<!-- PAUVRE LAMPIL -->
+	<serie name="Pauvre Lampil" interest="5" id="pauvre-lampil">
+		<bd num="1" title="Pauvre Lampil n°1"/>	
+		<bd num="2" title="Pauvre Lampil n°2"/>
+		<bd num="3" title="Pauvre Lampil n°3"/>
+		<bd num="4" title="Pauvre Lampil n°4"/>
+		<bd num="5" title="Pauvre Lampil n°5"/>
+		<bd num="6" title="Pauvre Lampil n°6"/>
+		<bd num="7" title="Pauvre Lampil n°7"/>
+	</serie>
+	<!-- LES AVENTURES DE TINTIN -->
+	<serie name="Tintin" interest="1" id="tintin">
+		<bd num="3" title="Tintin en Amérique"/>
+		<bd num="6" title="L'oreille cassée"/>
+		<bd num="7" title="L'ile Noire"/>
+		<bd num="9" title="Le Crabe aux pinces d'or (version en arabe)"/>
+		<bd num="10" title="L'étoile mystérieuse"/>
+		<bd num="18" title="L'affaire Tournesol"/>
+		<bd num="22" title="Vol 714 pour Sydney"/>
+		<bd num="23" title="Tintin et les Picaros"/>
+		<bd num="Cinéma 1" title="Tintin et le lac aux requins"/>
+	</serie>	
+	<!-- LEONARD -->
+	<serie name="Léonard" interest="5" id="leonard">
+		<bd num="16" title="Génie à revendre"/>
+		<bd num="18" title="Génie en sous-sol"/>
+		<bd num="23" title="Poil au génie"/>
+		<bd num="26" title="Génie or not génie ?"/>
+		<bd num="27" title="On a marché sur le génie !"/>
+		<bd num="29" title="Les bon contes font les bons génies"/>
+		<bd num="30" title="Génie du foot"/>
+	</serie>
+	<!-- GASTON -->
+	<serie name="Gaston" interest="5" id="gaston">
+		<bd num="0" title="Gaffes et gadgets"/>
+		<bd num="R1" title="Gala de gaffes à gogo"/>
+		<bd num="R2" title="Le bureau des gaffes en gros"/>
+		<bd num="R3" title="Gare aux gaffes du gars gonflé"/>
+		<bd num="R4" title="En direct de la gaffe"/>
+		<bd num="R5" title="Le lourd passé de Lagaffe"/>
+		<bd num="6" title="Des gaffes et des dégats"/>
+		<bd num="7" title="Un gaffeur sachant gaffer"/>
+		<bd num="8" title="Lagaffe nous gâte"/>
+		<bd num="9" title="Le cas Lagaffe"/>
+		<bd num="10" title="Le géant de la gaffe"/>
+		<bd num="11" title="Gaffes, bévues et boulettes"/>
+		<bd num="12" title="Le gang des gaffeurs"/>
+		<bd num="13" title="Lagaffe mérite des baffes"/>
+		<bd num="14" title="La saga des gaffes"/>
+		<bd num="15" title="Gaffe à Lagaffe"/>
+		<bd num="18" title="Gastion n°18 (nouvelle édition chez Marsu Productions de 18 albums au lieu des 15 originaux)"/>
+	</serie>
+	<!-- GASTOON -->
+	<serie name="Gastoon" interest="5" id="gastoon">
+		<bd num="1" title="Gaffe au neveu !" price="10,45€"/>
+		<bd num="2" title="Des vertes et des pas mûres !" price="9,54€"/>
+	</serie>	
+	<!-- PIERRE TOMBAL -->
+	<serie name="Pierre Tombal" interest="5" id="pierre-tombal">
+		<bd num="4" title="Des os pilants"/>
+		<bd num="5" title="Ô suaires"/>
+		<bd num="9" title="Voyage de n'os" price="6,50€"/>
+		<bd num="10" title="Dégâts des os"/>
+		<bd num="12" title="Os courent" price="6,50€"/>
+		<bd num="13" title="La pelle aux morts"/>	
+		<bd num="16" title="Tombe, la neige"/>
+		<bd num="17" title="Devinez qui on enterre demain ?"/>
+		<bd num="18" title="Condamné à perpète"/>
+		<bd num="20" title="Morts de rire"/>
+		<bd num="21" title="K.Os"/>
+		<bd num="22" title="Ne jouez pas avec la Mort !"/>
+		<bd num="24" title="On s'éclate mortels !"/>
+		<bd num="25" title="Mise en orbite"/>
+		<bd num="26" title="Pompes funèbres"/>
+		<bd num="27" title="Entre la vie et la mort"/>
+		<bd num="28" title="L'amour est dans le cimetière"/>
+	</serie>	
+	<!-- CEDRIC -->
+	<serie name="Cédric" interest="3" id="cedric">
+		<bd num="4" title="Papa a de la classe"/>
+		<bd num="8" title="Comme sur des roulettes"/>
+		<bd num="9" title="Parasite sur canapé"/>
+		<bd num="10" title="Gâteau-suprise"/>
+		<bd num="11" title="Cygne d'étang"/>
+		<bd num="12" title="Terrain minets"/>
+		<bd num="13" title="Papa, je veux un cheval !"/>
+		<bd num="15" title="Avis de tempête"/>
+		<bd num="18" title="Enfin seuls !"/>
+	</serie>	
+	<!-- SPIROU ET FANTASIO -->
+	<serie name="Spirou et Fantasio" interest="5" id="spirou">
+		<bd num="1" title="Quatres aventures de Spirou et Fantasion"/>
+		<bd num="2" title="Il y a un sorcier à Champignac"/>
+		<bd num="3" title="Les chapeaux noirs"/>
+		<bd num="4" title="Spirou et les héritiés" price="6,50€"/>
+		<bd num="5" title="Les voleurs du marsupilami" price="6,50€"/>
+		<bd num="6" title="La corne de rhinocéros" price="6,50€"/>
+		<bd num="7" title="Le dictateur et le champignon" price="6,50€"/>
+		<bd num="8" title="La mauvaise tête"/>
+		<bd num="9" title="Le repère de la murène"/>
+		<bd num="10" title="Les pirates du silence"/>
+		<bd num="11" title="Le gorille a bonne mine" price="6,50€"/>
+		<bd num="12" title="Le nid des Marsupilamis" price="6,50€"/>
+		<bd num="13" title="Le voyageur du Mésozoïque"/>
+		<bd num="14" title="Le prisonnier du bouddha" price="6,50€"/>
+		<bd num="15" title="Z comme Zorglub"/>
+		<bd num="16" title="L'ombre du Z"/>
+		<bd num="17" title="Spirou et les hommes-bulles"/>
+		<bd num="18" title="QRN sur Bretzelburg"/>
+		<bd num="19" title="Panade à Champignac" price="8,88€"/>
+		<bd num="20" title="Le faiseur d'or"/>
+		<bd num="21" title="Du glucose pour Noémie"/>
+		<bd num="22" title="L'Abbaye truquée" price="8,88€"/>
+		<bd num="23" title="Tora Torapa" price="8,88€"/>
+		<bd num="24" title="Tembo Tabou" price="8,88€"/>
+		<bd num="25" title="Le Gri-gri du Niokolo-Koba" price="8,88€"/>
+		<bd num="26" title="Du cidre pour les étoiles"/>
+		<bd num="27" title="L'Ankou" price="8,88€"/>
+			<bd num="28" title="Kodo le Tyran"/>
+			<bd num="29" title="Des haricots partout"/>
+		<bd num="30" title="La ceinture du grand froid" price="10,45€"/>
+		<bd num="31" title="La boîte noire" price="10,45€"/>
+		<bd num="32" title="Les voleurs de silence" price="6,50€"/>
+		<bd num="33" title="Virus"/>
+		<bd num="34" title="Aventure en Australie"/>
+		<bd num="35" title="Qui arrêtera Cyanure ?"/>
+		<bd num="36" title="L'horloger de la comète"/>
+		<bd num="37" title="Le réveil du Z"/>
+		<bd num="38" title="La jeunesse de Spirou"/>
+		<bd num="39" title="Spirou à New-York"/>
+		<bd num="40" title="La frousse aux trousses"/>
+		<bd num="41" title="La vallée des bannis"/>
+		<bd num="42" title="Spirou à Moscou"/>
+		<bd num="43" title="Vito la déveine"/>
+		<bd num="44" title="Le rayon noir"/>
+		<bd num="45" title="Luna fatale"/>
+		<bd num="46" title="Machine qui rêve"/>
+		<bd num="47" title="Paris sous-Seine"/>
+		<bd num="48" title="L'homme qui ne voulait pas mourir"/>
+		<bd num="49" title="Spirou à Tokyo"/>
+		<bd num="50" title="Aux sources du Z"/>
+		<bd num="51" title="Alerte aux Zorkons"/>
+		<bd num="52" title="La face cachée du Z" price="8,88€"/>
+		<bd num="53" title="Dans les griffes de la vipère"/>
+	</serie>	
+	<!-- LA JEUNESSE DE BLUEBERRY -->
+	<serie name="Jeunese de Blueberry" interest="0" id="jeunesse-de-blueberry">	
+		<bd num="11" title="La piste des maudits"/>
+	</serie>
+	<!-- XIII -->
+	<serie name="XIII" interest="5" id="xiii">	
+		<bd num="1" title="Le jour du soleil noir"/>
+	</serie>	
+	<!-- Thorgal -->
+	<serie name="Thorgal" interest="0" id="thorgal">	
+		<bd num="9" title="Les archers"/>
+	</serie>
+	<!-- Alpha -->
+	<serie name="Alpha" interest="1" id="alpha">	
+		<bd num="4" title="La liste"/>
+	</serie>
+	<!-- IR$ -->
+	<serie name="IR$" interest="0" id="irs">	
+		<bd num="1" title="La voie fiscale"/>
+	</serie>	
+	<!-- RIC HOCHET -->
+	<serie name="Ric Hochet" interest="0" id="ric-hochet">	
+		<bd num="6" title="Rapt sur le France"/>
+		<bd num="10" title="Les 5 revenants"/>
+		<bd num="25" title="Coups de griffes à Bouglione"/>
+	</serie>
+	<!-- LES 4AS -->
+	<serie name="Les 4as" interest="1" id="4as">	
+		<bd num="9" title="Les 4as et l'île du robinson"/>
+		<bd num="10" title="Les 4as et le tyran"/>
+	</serie>	
+	<!-- LE SCRAMEUSTACHE -->
+	<serie name="Le Scrameustache" interest="5" id="scrameustache">	
+		<bd num="1" title="L'héritier de l'Inca"/>
+		<bd num="8" title="La menace des Kromoks"/>
+	</serie>	
+	<!-- MARC LEBUT ET SON VOISIN -->
+	<serie name="Marc Lebut et son voisin" interest="2" id="marc-lebut">	
+		<bd num="6" title="La Ford T gagne"/>
+	</serie>
+	<!-- LA RIBAMBELLE -->
+	<serie name="La Ribambelle" interest="1" id="ribambelle">	
+		<bd num="4" title="La Ribambelle contre-attaque"/>
+		<bd num="6" title="La Ribambelle aux Galopingos"/>
+	</serie>
+	<!-- SOPHIE -->
+	<serie name="Sophie" interest="1" id="sophie">	
+		<bd num="4" title="Qui fait peur à Zoé ?"/>
+	</serie>	
+	<!-- NATHALIE -->
+	<serie name="Nathalie" interest="1" id="nathalie">	
+		<bd num="11" title="Tu te fiches du monde !"/>
+	</serie>
+	<!-- LES MEILLEURS RECITS DU JOURNAL DE SPIROU -->
+	<serie name="Meilleurs récits du journal de Spirou" interest="1" id="recits-journal-spirou">	
+		<bd num="8" title="Lètes di m'Molin"/>
+	</serie>
+	<!-- ARIA -->
+	<serie name="Aria" interest="4" id="aria">	
+		<bd num="2" title="La montagne aux sorciers"/>
+		<bd num="4" title="Les chevaliers d'Aquarius"/>
+	</serie>	
+	<!-- DAN COOPER -->
+	<serie name="Dan Cooper" interest="0" id="dan-cooper">	
+		<bd num="4" title="Cap sur Mars"/>
+		<bd num="6" title="Coup d'audace"/>
+	</serie>		
+	<!-- TITEUF -->
+	<serie name="Titeuf" interest="1" id="titeuf">	
+		<bd num="8" title="lâchez-moi le slip !"/>
+	</serie>
+	<!-- JERRY SPRING -->
+	<serie name="Jerry Spring" interest="1" id="jerry-spring">	
+		<bd num="15" title="Mon ami Red"/>
+	</serie>	
+	<!-- BLAKE ET MORTIMER -->
+	<serie name="Blake et Mortimer" interest="0" id="blake-et-mortimer">	
+		<bd num="7" title="L'affaire du collier"/>
+	</serie>
+	<!-- QUICK ET FLUPKE -->
+	<serie name="Quick et Flupke" interest="0" id="quick-et-flupke">	
+		<bd num="3" title="Toutes voiles dehors"/>
+		<bd num="4" title="Toutes voiles dehors"/>
+		<bd num="5" title="Chacun son tour"/>
+		<bd num="8" title="Vive le progrès"/>
+	</serie>	
+	<!-- LI PTIT BOUT DCHIQUE -->
+	<serie name="P'tit bout d'chique" interest="0" id="boutdechique">	
+		<bd num="4" title="D'ine fièsse à l'ôte"/>
+	</serie>
+	<!-- LES GUIDES EN BD -->
+	<serie name="Guides en BD" interest="2" id="guide">	
+		<bd num="" title="Le guide de l'Anti-Boulot"/>
+	</serie>	
+	<!-- NANAMI -->
+	<serie name="Nanami" interest="4" id="nanami">	
+		<bd num="1" title="Le théâtre du vent"/>
+	</serie>
+	<!-- JEREMIAH -->
+	<serie name="Jeremiah" interest="3" id="jeremiah">	
+		<bd num="27" title="Elsie et la rue"/>
+	</serie>	
+	<!-- DUPUIS EXPRESSO -->
+	<serie name="Dupuis Expresso" id="coeurs-solitaires">	
+		<bd num="" title="Les coeurs solitaires"/>
+	</serie>	
+	<!-- BOB ET BOBETTE -->
+	<serie name="Bob et Bobette" id="bob-et-bobette">	
+		<bd num="109" title="Les cavaliers de l'espace"/>
+	</serie>	
+	<!-- BUCK DANNY -->
+	<serie name="Buck Danny" interest="5" id="buck-danny">
+		<bd num="1" title="Les japs attaquent" inside="L'intégrale 1"/>
+		<bd num="2" title="Les mystères de Midway" inside="L'intégrale 1"/>
+		
+		<bd num="3" title="La revanche des Fils du Ciel"/>
+		<bd num="3" title="La revanche des Fils du Ciel" inside="L'intégrale 2"/>
+		<bd num="4" title="Tigres Volants" inside="L'intégrale 2"/>
+		<bd num="5" title="Dans les griffes du Dragon Noir" inside="L'intégrale 2"/>
+		<bd num="6" title="Attaque en Birmanie" inside="L'intégrale 2"/>
+		
+		<bd num="7" title="Les trafiquants de la mer Rouge" inside="L'intégrale 3"/>
+		<bd num="8" title="Les pirates du désert" inside="L'intégrale 3"/>
+		<bd num="9" title="Les gangsters du pétrole" inside="L'intégrale 3"/>
+		<bd num="10" title="Pilotes d'essai" inside="L'intégrale 3"/>
+		
+		<bd num="11" title="Ciel de Coréee" inside="L'intégrale 4"/>
+		<bd num="12" title="Avions sans pilote"/>
+		<bd num="12" title="Avions sans pilote" inside="L'intégrale 4"/>
+		<bd num="13" title="Un avion n'est pas rentré"/>
+		<bd num="13" title="Un avion n'est pas rentré" inside="L'intégrale 4"/>
+		<bd num="14" title="Patrouille à l'aube" inside="L'intégrale 4"/>
+		
+		<bd num="15" title="NC-22654 ne répond plus" inside="L'intégrale 5"/>
+		<bd num="16" title="Menace au nord" inside="L'intégrale 5"/>
+		<bd num="16" title="Menace au nord"/>
+		<bd num="17" title="Buck Danny contre Lady X" inside="L'intégrale 5"/>
+		<bd num="17" title="Buck Danny contre Lady X"/>
+		
+		<bd num="18" title="Alerte en Malaisie"/>
+		<bd num="18" title="Alerte en Malaisie" inside="L'intégrale 6"/>
+		<bd num="19" title="Le Tigre de Malaisie"/>
+		<bd num="19" title="Le Tigre de Malaisie" inside="L'intégrale 6"/>
+		<bd num="20" title="S.O.S. Soucoupes volantes"/>
+		<bd num="20" title="S.O.S. Soucoupes volantes" inside="L'intégrale 6"/>
+		<bd num="21" title="Un prototype a disparu"/>	
+		<bd num="21" title="Un prototype a disparu" inside="L'intégrale 6"/>	
+		
+		<bd num="22" title="Top scret"/>
+		<bd num="22" title="Top scret" inside="L'intégrale 7"/>
+		<bd num="23" title="Mission vers la vallée perdue"/>
+		<bd num="23" title="Mission vers la vallée perdue" inside="L'intégrale 7"/>
+		<bd num="24" title="Prototype FX-13"/>
+		<bd num="24" title="Prototype FX-13" inside="L'intégrale 7"/>
+		<bd num="25" title="Escadrille ZZ"/>
+		<bd num="25" title="Escadrille ZZ" inside="L'intégrale 7"/>
+		
+		<bd num="26" title="Le retour des Tigres Volants" inside="L'intégrale 8"/>
+		<bd num="27" title="Les Tigres Volants à la rescousse" inside="L'intégrale 8"/>
+		<bd num="28" title="Tigres Volants contre pirates" inside="L'intégrale 8"/>
+		<bd num="29" title="Opération Mercury" inside="L'intégrale 8"/>
+		<!--
+		<bd num="30" title="Les Voleurs de satellites" inside="L'intégrale 9" />
+		<bd num="31" title="X-15" inside="L'intégrale 9" />
+		<bd num="32" title="Alerts à Cap Kennedy !" inside="L'intégrale 9" />
+		<bd num="33" title="Le mystère des avions fantômes" inside="L'intégrale 9" />		
+		-->
+		<bd num="32" title="Alerts à Cap Kennedy !"/>
+		<bd num="33" title="Le mystère des avions fantômes"/>
+		<bd num="41" title="Mission Apocalypse"/>
+		<bd num="42" title="Les pilots de l'enfer"/>
+		<bd num="43" title="Le feu du ciel"/>
+	</serie>			
+	<!-- CHICK BILL -->
+	<serie name="Chick Bill" interest="5" id="chick-bill">
+		<bd num="13" title="Le dernier des Bull"/>
+		<bd num="14" title="L'ennemi aux cent visages"/>
+		<bd num="15" title="L'arme à gauche"/>
+		<bd num="17" title="Les millions de Kid Ordinn"/>
+		<bd num="25" title="L'arme secrète de Kid Ordinn"/>
+		<bd num="26" title="Le filon fêlé du filou félon"/>
+		<bd num="27" title="Le troc truqué de Dog Bull"/>
+		<bd num="31" title="L'innocent du village"/>
+		<bd num="37" title="Le ranch hanté"/>
+		<bd num="39" title="Le chaud fauve et le faux chauve"/>
+		<bd num="41" title="Panique à K.O Corral"/>
+		<bd num="44" title="La maison du plus fort"/>
+		<bd num="45" title="Shérif à vendre"/>
+		<bd num="46" title="La tête au mur"/>
+		<bd num="50" title="Mort au rat"/>
+	</serie>
+	<!-- LUCKY LUKE -->
+	<serie name="Lucky Luke" editor="Dupuis" interest="5" id="lucky-luke-moris">
+		<bd num="1" title="La mine d'or de Dick Digger"/>
+		<bd num="2" title="Rodeo"/>
+		<bd num="2" title="Hors-la-loi"/>
+		<bd num="8" title="Lucky Luke et Phil Defer"/>
+		<bd num="9" title="Des Rails sur la prairie"/>
+		<bd num="10" title="Alerte aux Pieds-Bleus"/>
+		<bd num="11" title="Lucky Luke contre Joss Jamon"/>
+		<bd num="14" title="Ruée sur l'Oklahoma"/>
+		<bd num="16" title="En remontant le Mississippi (firgure dans Lucky Luke SPECIAL n°6)"/>
+		<bd num="17" title="Sur la piste des Dalton (firgure dans Lucky Luke SPECIAL n°6)"/>
+		<bd num="18" title="À l'ombre des derricks (firgure dans Lucky Luke SPECIAL n°6)"/>
+		<bd num="15" title="L'Évasion des Dalton"/>
+		<bd num="21" title="Les Collines noires"/>
+		<bd num="23" title="Les Dalton courent toujours"/>
+		<bd num="24" title="La Caravane (2x)"/>
+		<bd num="28" title="L'Escorte"/>
+		<bd num="31" title="Tortillas pour les Dalton"/>
+	</serie>
+	<serie name="Lucky Luke" editor="Dargaud / Lucky Comics" interest="5" id="lucky-luke-dargaud">
+		<bd num="1" title="La Diligence"/>
+		<bd num="11" title="L'Héritage de Rantanplan"/>
+		<bd num="16" title="Le magot des Dalton"/>
+		<bd num="23" title="Le Daily Star"/>
+		<bd num="24" title="La fiancée de Lucky luke"/>
+		<bd num="26" title="Nitroglycérine"/>
+		<bd num="39" title="Le Prophète"/>
+		
+	</serie>
+	<serie name="Lucky Luke d'aptès Morris" editor="Lucky Comics" interest="5" id="lucky-luke-apres-moris">
+		<bd num="1" title="La Belle Province"/>
+	</serie>
+	<!-- BOULE ET BILL -->
+	<serie name="Boule et Bill" interest="3" id="boule-et-bill">
+		<bd num="6" title="60 gags de Boule et Bill"/>
+		<bd num="7" title="60 gags de Boule et Bill"/>
+		<bd num="11" title="Jeux de Bill"/>
+		<bd num="14" title="Ras le Bill!"/>
+		<bd num="15" title="Bill, nom d'un chien !"/>
+		<bd num="16" title="Souvenirs de famille"/>
+		<bd num="19" title="Globe trotters"/>
+		<bd num="22" title="22 ! v'là Boule et Bill !"/>
+		<bd num="24" title="Bwouf. Allo Bill ?"/>
+	</serie>
+	<!-- BLUEBERRY -->
+	<serie name="Blueberry" interest="5" id="blueberry">
+		<bd num="1 (1)" title="Fort Navajo"/>
+		<bd num="3 (3)" title="L'Aigle solitaire"/>
+		<bd num="4 (4)" title="Le cavalier perdu"/>
+		<bd num="8 (8)" title="Le piste de Sioux"/>
+		<bd num="9 (9)" title="Général Tête jaune"/>
+		<bd num="11 (11)" title="La mine de l'Allemand perdu" inside="Les monts de la Superstition"/>
+		<bd num="12 (12)" title="Le spectre aux balles d'or" inside="Les monts de la Superstition"/>
+		<bd num="13 (13)" title="Chihuahua Pearl"/>
+		<bd num="14 (14)" title="L'homme qui valait 500 000$"/>
+		<bd num="15 (15)" title="Ballade pour un cercueil"/>
+		<bd num="16 (16)" title="Le hors la loi"/>
+		<bd num="18 (17)" title="Angel Face"/>
+		<bd num="21 (18)" title="Nez cassé"/>
+		<bd num="22 (19)" title="La longue marche"/>
+		<bd num="23 (20)" title="La tribu fantôme"/>
+		<bd num="24 (21)" title="La dernière carte"/>
+		<bd num="26 (22)" title="Le bout de la piste"/>
+	</serie>	
+	<!-- COMANCHE -->
+	<serie name="Comanche" interest="5" id="comanche">
+		<bd num="1" title="Red Dust"/>
+		<bd num="2" title="Les guerriers du désespoir"/>
+		<bd num="3" title="Les loups de Wyoming"/>
+		<bd num="4" title="Le ciel est rouge sur Laramie"/>
+		<bd num="7" title="Le doigt du diable"/>
+		<bd num="8" title="Les shériffs"/>
+		<bd num="9" title="Et le diable hurla de joie..."/>
+	</serie>	
+	<!-- ASTERIX LE GAULOIS -->
+	<serie name="Astérix le Gaulois" interest="5" id="asterix">
+		<bd num="1" title="Astérix le Gaulois"/>
+		<bd num="2" title="La Serpe d'or"/>
+		<bd num="3" title="Astérix et les Goths"/>
+		<bd num="4" title="Astérix gladiateur"/>
+		<bd num="5" title="Le Tour de Gaule d'Astérix"/>
+		<bd num="6" title="Astérix et Cléopâtre"/>
+		<bd num="7" title="Le Combat des chefs"/>
+		<bd num="8" title="Astérix chez les Bretons"/>
+		<bd num="9" title="Astérix et les Normands"/>
+		<bd num="10" title="Astérix légionnaire"/>
+		<bd num="11" title="Le Bouclier arverne"/>
+		<bd num="12" title="Astérix aux Jeux Olympiques"/>
+		<bd num="13" title="Astérix et le chaudron"/>
+		<bd num="14" title="Astérix en Hispanie"/>
+		<bd num="15" title="La Zizanie"/>
+		<bd num="16" title="Astérix chez les Helvètes"/>
+		<bd num="17" title="Le Domaine des dieux"/>
+		<bd num="18" title="Les Lauriers de César"/>
+		<bd num="19" title="Le Devin"/>
+		<bd num="20" title="Astérix en Corse"/>
+		<bd num="21" title="Le Cadeau de César"/>
+		<bd num="22" title="La Grande Traversée"/>
+		<bd num="23" title="Obélix et compagnie"/>
+		<bd num="24" title="Astérix chez les Belges"/>
+		<bd num="25" title="Le Grand Fossé"/>
+		<bd num="26" title="L'Odyssée d'Astérix"/>
+		<bd num="27" title="Le Fils d'Astérix"/>
+		<bd num="28" title="Astérix chez Rahàzade"/>
+		<bd num="29" title="La Rose et le Glaive"/>
+		<bd num="30" title="La Galère d'Obélix"/>
+		<bd num="31" title="Astérix et Latraviata"/>
+		<bd num="32" title="Astérix et la rentrée gauloise"/>
+		<bd num="33" title="Le ciel lui tombe sur la tête"/>
+	</serie>
+	<!-- SCHTROUMPFS -->
+	<serie name="Les Schtroumpfs" interest="3" id="schtroumpfs">
+		<bd num="1" title="Les schtroumpfs noirs"/>
+		<bd num="2" title="Le schtroumpfissime"/>
+		<bd num="3" title="La schtroumpfette"/>
+		<bd num="4" title="L'oeuf et les schtroumpfs"/>
+		<bd num="5" title="Les schtroumpfs et le cracoucass"/>
+		<bd num="6" title="Le cosmoschtroumpf (x2)"/>
+		<bd num="7" title="L'apprenti schtroumpf"/>
+		<bd num="8" title="Histoires de schtroumpfs"/>
+		<bd num="9" title="Schtroumpf vert et vert schtroumpf"/>
+		<bd num="10" title="La soupe aux schtroumpfs"/>
+		<bd num="11" title="Les schtroumpfs olympiques"/>
+		<bd num="12" title="Le bébé schtroumpf"/>
+		<bd num="13" title="Les p'tits schtroumpfs"/>
+		<bd num="14" title="L'aéroschtroumpf"/>
+		<bd num="15" title="L'étrange réveil du schtroumpf paresseux"/>
+		<bd num="16" title="Le schtroumpf financier"/>
+		<bd num="17" title="Le schtroumpfeur de bijoux"/>
+		<bd num="18" title="Docteur schtroumpf"/>
+		<bd num="19" title="Le schtroumpf sauvage"/>
+		<bd num="20" title="La menuace schtroumpf"/>
+		<bd num="21" title="On ne schtroumpfe pas le progrès"/>
+		<bd num="22" title="Le schtroumpf reporter"/>
+		<bd num="23" title="Les schtroumpfs joueurs"/>
+		<bd num="24" title="Salade de schtroumps"/>
+		<bd num="25" title="Un enfant chez les schtroumpfs"/>
+		<bd num="26" title="Les schtroumpfs et le livre qui dit tout"/>
+		<bd num="" title="Schtroumpferies 1"/>
+		<bd num="" title="Schtroumpferies 2"/>
+		<bd num="" title="Schtroumpferies 3"/>
+	</serie>
+	<!-- SEULS -->
+	<serie name="Seuls" interest="5" id="seuls">
+		<bd num="1" title="La Disparition"/>
+		<bd num="2" title="Le Maître des couteaux"/>
+		<bd num="3" title="Le Clan du requin"/>
+		<bd num="4" title="Les Cairns rouges"/>
+		<bd num="5" title="Au cœur du maelström"/>
+		<bd num="6" title="La Quatrième Dimension et demie"/>
+		<bd num="7" title="Les Terres basses"/>
+	</serie>
+	
+	<!-- PIERRE KROLL -->
+	<serie name="Pierre Kroll" interest="4" id="kroll">
+		<bd num="17" title="Quand est-ce qu'on mange ?"/>
+	</serie>
+	
+	<!-- SANCTUAIRE -->
+	<serie name="Sanctuaire" interest="5" id="sanctuaire" type="saga">
+		<bd num="1" title="USS Nebraska"/>
+		<bd num="2" title="Le puits des abîmes"/>
+		<bd num="3" title="Môth"/>
+	</serie>
+	
+	<!-- ESTEBAN -->
+	<serie name="Le Voyage d'Esteban" interest="4" id="esteban">
+		<bd num="1" title="Le baleinier"/>
+	</serie>	
+	
+	<!-- INSIDERS -->
+	<serie name="Insiders" interest="5" id="insiders">
+		<bd num="1" title="Guérilla tchétchène"/>
+		<bd num="2" title="Opération Offshore"/>
+		<bd num="3" title="Missiles pour Islamabad"/>
+		<bd num="4" title="Le piège afghan"/>
+		<bd num="5" title="O.P.A. sur le Kremlin"/>
+		<bd num="6" title="Destination Goulag"/>
+	</serie>
+	
+	<!-- LE CASSE -->
+	<serie name="Le Casse" interest="5" id="casse" type="saga">
+		<bd num="1" title="Diamond"/>
+		<bd num="2" title="Le troisième jour"/>
+		<bd num="3" title="Soul Man"/>
+		<bd num="4" title="La Grande Escroquerie"/>
+		<bd num="5" title="Gold Rush"/>
+		<bd num="6" title="L’Héritage du Kaiser"/>
+	</serie>
+	
+	<!-- Prométhée -->
+	<serie name="Prométhée" interest="5" id="promethee" type="saga">
+		<bd num="1" title="Atlantis"/>
+		<bd num="2" title="Blue beam project"/>
+		<bd num="3" title="Exogénèse"/>
+		<bd num="4" title="Mantique"/>
+		<bd num="5" title="Le sarcophage"/>
+	</serie>
+	
+	<!-- SODA -->
+	<serie name="SODA" interest="5" id="soda">
+		<bd num="1" title="Un ange trépasse"/>
+		<bd num="2" title="Lettres à Satan"/>
+		<bd num="3" title="Tu ne buteras point"/>
+		<bd num="4" title="Dieu est mort ce soir"/>
+		<bd num="5" title="Fureur chez les saints"/>
+		<bd num="6" title="Confessions Express"/>
+		<bd num="7" title="Lève-toi et meurs"/>
+		<bd num="8" title="Tuez en paix"/>
+	</serie>	
+</bds>

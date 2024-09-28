@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link href="mep.css" rel="stylesheet" type="text/css" media="all" />
+		<title>Gestionnaire de BD</title>
+		<script type="text/javascript" src="js/oDOMImplementation.js"></script>
+		<script type="text/javascript">
+		<!--
+		var DOMXML = null;
+
+		window.onload = function () {
+			getDOMImplementation('data.xml', getData);
+		}
+
+		function getData(oData) {
+			DOMXML = oData;
+			
+			var series = oData.getElementsByTagName("serie");
+			var sorted = [];
+			
+			// Classement par ordre alphabétique, via tableau à 2 dimensions
+			for (var i=0, c=series.length; i<c; i++) {
+				if (series[i].getAttribute("editor")) {
+					sorted.push([series[i].getAttribute("name") + " &nbsp; (" + series[i].getAttribute("editor") + ")", i]); 
+				} else {
+					sorted.push([series[i].getAttribute("name"), i]); 
+				}
+			}
+			sorted.sort();	
+			
+			// Génération du SELECT
+			var list = "<select name=\"serieName\" id=\"serieName\">\n";
+			for (var i=0, c=sorted.length; i<c; i++) {
+				list += "<option value=\"" + sorted[i][1] + "\">" + sorted[i][0] + "</option>\n";
+			}
+			
+			list += "</select>\n";
+			
+			document.getElementById("outputListDiv").innerHTML = list;
+			document.getElementById("nbBD").innerHTML = "(" + oData.getElementsByTagName("bd").length + " BD au total)";
+		}
+
+		function displayBD() {
+			with (document.getElementById("serieName")) var idSerie = parseInt(options[selectedIndex].value);
+			
+			var serie = DOMXML.getElementsByTagName("serie")[idSerie];
+			var bds   = serie.getElementsByTagName("bd");
+			
+			var table = "<table class=\"sortable\" width=\"100%\">\n";
+			table += "<tr><th width=\"20\">N°</th><th>Titre de l'album</th></td>\n";
+			
+			for (var i=0, c=bds.length; i<c; i++) {
+				table += "<tr><td>" + bds[i].getAttribute("num") + "</td><td>" + bds[i].getAttribute("title") + "</td></tr>\n";
+			}
+			
+			table += "</table>\n";
+			
+			document.getElementById("outputBDDiv").innerHTML = table;
+			document.getElementById("outputBDFieldset").style.display = "block";
+		}
+		//-->
+		</script>
+		<style type="text/css" media="screen">
+			* { font-family: Verdana, Arial, Helvetica, sans-serif !important; font-size: .95em; }
+			fieldset { margin: 15px; padding-left: 1em; padding-right: 1em; padding-bottom: 1em; }
+			legend { margin: 10px; }
+			#outputBDFieldset { display: none; }
+			#nbBD {	font-weight: normal; }
+		</style>
+		</head>
+		
+		
+			<body>
+			<h1>Gestionnaire de BD</h1>
+
+			<fieldset>
+				<legend>Sélection de la série</legend>
+				<form id="bdForm" method="get" action="">
+					<div>
+						<label for="serieName">Choisir une série : </label>
+						<span id="outputListDiv"><em>Liste des séries non chargée...</em></span>
+					</div>
+					<p><input type="button" value="Afficher les BD de cette série" onclick="displayBD();" /></p>
+				</form>
+			</fieldset>
+
+			<fieldset id="outputBDFieldset">
+				<legend>BD en ma possession</legend>
+				<div id="outputBDDiv"></div>
+			</fieldset>
+
+			</body>
+	</html>

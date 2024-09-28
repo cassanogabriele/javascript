@@ -1,0 +1,56 @@
+<!doctype html>
+	<html lang="fr">
+		<head>
+			<meta Charest="UTF-8">
+				<title>Cr&eacute;ation d'une liste d'&eacute;l&egrave;ve d'un Lyc&eacute;e</title>
+					<link rel="stylesheet" href="css/eleves.css">
+					<script src="libraries/angular.min.js"></script>
+					<script src="javascript/miniprojet.js"></script>				
+		</head>
+		
+			<h1>Liste des &eacute;l&egrave;ves du Lyc&eacute;e</h1>
+				<div id="formulaire" ng-app ng-controller="controleur">
+				
+				<form name="ajoutEleve"ng-submit="soumission(ajoutEleve.$valid)">
+					<label for="nom">Nom</label>
+					<input type="text" id="nom" placeholder="Entrez le nom" ng-model="eleve.nom" required>
+					<br />
+					<label for="prenom">Prénom</label>
+					<input type="text" id="prenom" placeholder="Entrez le prénom" ng-model="eleve.prenom" required>
+					<br />
+					<label for="datenaiss">Date de naissance</label>						
+					<input type="text" id="datenaiss" placeholder="Entrez la date de naissance" ng-model="eleve.datenaiss" required>
+					<br />
+					<p>Choisissez la classe de l'&eacute;l&egrave;ve
+						<select ng-model="eleve.classe" required>
+							<option>1&eacute;re ann&eacute;e</option>
+							<option>2&egrave;me ann&eacute;e</option>
+							<option>3&egrave;me ann&eacute;e</option>
+							<option>4&egrave;me ann&eacute;e</option>
+							<option>5&egrave;me ann&eacute;e</option>
+							<option>6&egrave;me ann&eacute;e</option>
+						</select>
+					</p>	
+						<br />
+						
+							<button type="submit" class="myButton">Ajouter</button>
+				</form>
+						
+						<table>
+							<caption>El&egrave;ves</caption>
+								<tr>
+									<th>Nom</th>
+									<th>Prénom</th>
+									<th>Date de naissance</th>
+									<th>Classe</th>
+								</tr>
+								
+								<tr ng-repeat="eleve in eleves">
+									<td>{{eleve.nom | uppercase}}</td>
+									<td>{{eleve.prenom | uppercase}}</td>
+									<td>{{eleve.datenaiss | uppercase}}</td>	
+									<td>{{eleve.classe | uppercase}}</td>								
+								</tr>
+						</table>
+				</div>
+	</html>

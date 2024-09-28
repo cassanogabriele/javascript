@@ -1,0 +1,144 @@
+<!-- JavaScript -->
+function checkit()
+{
+	// Rassemblement des données qui sont finalement écrites dans le "textarea"
+	var textstring = '';
+	/*
+		On vérifie si toutes les zones ont étés remplies ? Toutes les cases et leurs valeurs sont dans "textstring"
+	
+	*/
+	for (i=0;i<4;i++)
+	{
+		var box = document.forms['example'].elements[i];
+		if (!box.value) 
+		{
+			alert('Vous n\'avez pas remplit : ' + box.name + '!');
+			box.focus()
+			return;
+		}
+			textstring += box.name + ': ' + box.value + '\n';
+	}
+	
+	// On récupère la valeur des "pourquoi" des boutons radios
+	user_input = '';
+	for (i=0;i<document.forms['example'].why.length;i++) 
+	{
+		if (document.forms['example'].why[i].checked) 
+		{
+			user_input = document.forms['example'].why[i].value;
+		}
+	}
+		textstring += 'Pourquoi apprendre le JavaScript ? : ' + user_input + '\n';
+
+	// On récupère les valeurs du "comment" de la boîte de sélection
+	user_input = document.example.refer.options[document.example.refer.selectedIndex].value
+	textstring += 'Source du site ?: ' + user_input + '\n';
+
+	// On récupère les cases cochées
+
+	textstring += 'Vous voulez plus d\'informations sur : ';
+	for (i=9;i<13;i++) 
+	{
+		if (document.example.elements[i].checked)
+		{
+			textstring += document.example.elements[i].name + ' ';
+		}
+	}
+
+	// Ecriture de toutes les valeurs récupérées dans "textstring" dans "textarea"
+
+	document.forms['example'].output.value = textstring;
+}
+
+
+<!-- HTML -->
+<!DOCTYPE html>
+	<html>
+	  <head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/form.css" />
+		<script type="text/javascript" src="JavaScript/trait_form.js"></script>
+		<title>Formulaire d'inscription</title>
+	  </head>
+			<h1>Apprendre le JavaScript</h1>
+			
+			  <body>
+				<form name="example" action="#" onsubmit="checkit(); return false" style="margin-left:auto;margin-right:auto;">
+					<table class="form" s>
+						<tr>
+							<td>Nom, Pr&eacute;nom </td>
+							<td><input name="Nom" /></td>
+						</tr>
+
+						<tr>
+							<td>Adresse</td>
+							<td><input name="Adresse" /></td>
+						</tr>
+
+						<tr>
+							<td>Ville</td>
+							<td><input name="Ville" /></td>
+						</tr>
+
+						<tr>
+							<td>E-mail</td>
+							<td><input name="E-mail" /></td>
+						</tr>
+
+						<tr>
+							<td>Pourquoi voulez-vous apprendre le JavaScript ?</td>
+							<td >
+							<input style="margin-top:20px;" type="radio" name="why" value="Je ne sais pas" />Je ne sais pas
+							<br />
+							<input type="radio" name="why" value="Demande du patron" />Parce que mon patron me l'a demand&eacute;
+							<br />
+							<input type="radio" name="why" value="Passionant" />Int&eacute;ress&eacute;
+							<br />
+							<input type="radio" name="why" value="Utile" />Ce sera utilise pour le futur
+							</td>
+						</tr>
+						
+						<tr>
+						<td>Comment avez-vous connu ce site ?</td>
+							<td>
+								<select name="refer" style="margin-top:10px;">
+									<option value='' selected="selected">--- S&eacute;lectionnez une r&eacute;ponse ---</option>
+									<option value="random">J'ai trouv&eacute; par hasard</option>
+									<option value="WDF">Via WDF</option>
+									<option value="NetlinQ">Via NetlinQ</option>
+									<option value="Fomulaire de recherche">Gr&acirc;ce &acirc; un moteur de recheche</option>
+								</select>
+						</td>
+						</tr>
+						
+						<tr>
+							<td>Je d&eacute;sire avoir plus d'information sur : </td>
+							<td>
+								<input type="checkbox" name="Les tableaux" />Les tableaux
+								<br />
+								<input type="checkbox" name="Les operateurs" />Les op&eacute;rateurs
+								<br />
+								<input type="checkbox" name="Les evenements" />Les &eacute;v&eacute;nements
+								<br />
+								<input type="checkbox" name="Les fonctions" />Les fonctions
+							</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2">
+								<button class="submit" type="submit" value="Submit form" />Soumettre</button>
+								<br />
+								<button class="reset" id="reset" type="reset" />Effacer</button>
+							</td>
+						</tr>
+						
+						<tr>
+							<td colspan="2">
+							<textarea cols="60" rows="7" style="margin-left:30px;margin-top:15px;margin-bottom:15px;" name="output">Les champs du formulaire remplit s'affichent ici !</textarea>
+							</td>
+						</tr>
+					</table>
+				</form> 
+				
+			  </body>
+	</html>

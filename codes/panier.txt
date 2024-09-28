@@ -1,0 +1,197 @@
+// Affichage du panier de l'utilisateur
+
+// On attend 1 sec pour simuler la réalité car les serveurs sont souvent lents
+sleep(1);
+
+// Le controlleur 
+
+// On vérifie qu'on a bien les paramètres attendus, si ce n'est pas le case, on renvoie le message indiquant l'usage de l'action
+if (array_key_exists("login", $_POST)&& array_key_exists("motPasse", $_POST)){
+// Les paramètres ont bien ete transmis
+
+// On récupère l'utilisateur correspondant aux paramètre
+$user = get_user($_POST["login"], $_POST["motPasse"]);
+
+if ($user) {
+	// S'il existe, on le connecte 
+	connecter_user($user);
+}
+	// Sinon, dans tous les cas, on renvoie la réponse
+	repondre($user);
+} else {
+	print "usage : $_SERVER[PHP_SELF]?login=...&motPasse=...";
+}
+
+// Le modèle
+function get_user($login, $motPasse) {
+// Le seul utilisateur valide sera Haddock/Archibald
+$user = null;
+
+if ($login == "Gabriele" && $motPasse == "Radwane6") {
+	$user = array("id" => 1, "login" => "Gabriele");
+}
+	return $user;
+}
+
+function connecter_user($user) {
+	// Enregistrer l'utilisateur dans la session web
+}
+
+// La vue 
+function repondre($user) {
+	if ($user) {
+		print "Utilisateur '$user[login]' connect&eacute;";
+	} else {
+		print "Utilisateur inconnu ou mot de passe invalide";
+	}
+}
+
+// Le HTML : corps de la page avec le panier et un formulaire dont l'action est un appel à la fonction JavaScript identifier()
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta http-equiv="content-type"	content="text/html; charset=iso-8859-1" />
+			<title>Panier</title>
+			
+			<style type="text/css">
+			button {
+				width: 12ex;
+				height: 2em;
+				margin: 0ex 1ex 0ex 1ex;
+			}
+			
+			#panier {
+				text-align: center;
+				font-size:120%;
+				background: #FAF0F5;
+			}
+			</style>
+		</head>
+			
+		<body onload="montrerInactivite()">
+			<p id="panier">Zone affichant le panier</p>
+				<!-- identifier() construit la requête HTTP et la lance, le traitement est déclenché par le bouton "S'identifier" -->
+				<form name="identification"	action="javascript:identifier()">
+					<table border="0">
+						<tbody>
+							<tr>
+								<td>Identifiant</td>
+								<td><input type="text" id="login"/></td>
+							</tr>
+									
+							<tr>
+								<td>Mot de passe</td>
+								<td><input type="password" id="motPasse"/></td>
+							</tr>
+									
+							<tr>
+								<td colspan="2" style="text-align: center">
+									<!-- correspond au traitement lorsque la réponse est complètement récupérée -->
+									<button type="submit">
+										<span id="identifierOff">S'identifier</span>
+										<img id="identifierOn" src="loading.gif"alt="Identification en cours ..."/>
+									</button>
+									<!-- abandonne la requête en cours d'exécution -->
+									<button type="button" id="boutonAbandonnerIdentifier" onclick="abandonnerIdentifier()">Annuler</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+						
+					<div id="message"></div>
+				</form>
+		</body>
+	</html>
+	
+// L'ajax
+<script type="text/javascript">
+// la requête http
+var requete;
+			
+function identifier() {
+	requete = getRequete();
+				
+	if(requete != null) {
+	// Constituer le corps de la requete (la chaine de requete)
+		var login = document.getElementById("login").value;
+		var motPasse = document.getElementById("motPasse").value;
+		var corps = "login=" + encodeURIComponent(login) + "&motPasse=" + encodeURIComponent(motPasse);
+				
+		try {
+			// Ouvrir une connexion asynchrone
+			requete.open("POST", "identifier.php", true);
+			// Positionner une en-tete indispensable
+			// quand les parametres sont passes par POST
+			requete.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			// Traitement a effectuer quand l'etat de la requete changera
+			requete.onreadystatechange = onIdentifier;
+			// Lancer la requete
+			requete.send(corps);
+			// Montrer que la requete est en cours
+			montrerActivite();
+		}catch (exc) {
+				montrerInactivite();
+		}
+	} else {
+		setMessage("Impossible de se connecter au serveur");
+	}
+}
+			
+// Ce qui s'executera lorsque la reponse arrivera
+function onIdentifier() {
+	if (requete.readyState == 4 && requete.status == 200) {
+		// Montrer que la requete est terminee
+		montrerInactivite();
+		// Afficher le message de reponse recu
+		setMessage(requete.responseText);
+	}
+}
+			
+// Abandonner la requete
+function abandonnerIdentifier() {
+	if (requete != null) {
+		requete.abort();
+	}
+		montrerInactivite();
+		setMessage("Requ&ecirc;te abandonn&eacute;e");
+}
+			
+// Recuperer la requete existante ou une nouvelle si elle vaut null
+function getRequete() {
+	var result = requete;
+	
+	if (result == null) {
+		if (window.XMLHttpRequest) {
+			// Navigateur compatible Mozilla
+			result = new XMLHttpRequest();
+		} else if (window.ActiveXObject) {
+		
+		// Internet Explorer sous Windows
+		result = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+	}
+	return result;
+}
+			
+// Mettre les boutons dans l'etat initial
+function montrerInactivite() {
+	document.getElementById("identifierOff").style.display = "inline";
+	document.getElementById("identifierOn").style.display = "none";
+	document.getElementById("boutonAbandonnerIdentifier").disabled = true;
+}
+			
+// Montrer que la requete est en cours
+function montrerActivite() {
+	document.getElementById("identifierOff").style.display = "none";
+	document.getElementById("identifierOn").style.display = "inline";
+	document.getElementById("boutonAbandonnerIdentifier").disabled = false;
+	setMessage("");
+}
+			
+// Afficher un message
+function setMessage(msg) {
+	document.getElementById("message").innerHTML = msg;
+}
+</script>
+
+

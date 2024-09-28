@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Manipulation d'objets</title>
+			<link rel="stylesheet" href="css/bootstrap.css">   
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		</head>
+	
+		<body>
+			<div style="text-align:center;margin-top:25px;" ng-app="myApp" ng-controller="myCtrl">
+				<div class="form-group">
+					<label for="identite">Identité</label>
+					<input type="text" style="text-align:center;" class="form-control" id="identité" ng-model="id">
+					<br/>
+					<label for="identite">Nom</label>
+					<input type="text" style="text-align:center;" class="form-control" id="nom" ng-model="firstName">
+					<br/>
+					<label for="identite">Prénom</label>
+					<input type="text" style="text-align:center;" class="form-control" id="prenom" ng-model="lastName">
+					<br/>
+					<label for="identite">Date de naissance</label>
+					<input type="text" style="text-align:center;" class="form-control" id="date-naissance" ng-model="birthdate">
+					<br/>
+					Nom complet : {{firstName + " " + lastName}}					
+				</div>
+			</div>
+
+			<script>
+			var app = angular.module('myApp', []);
+			app.controller('myCtrl', function($scope) {
+				$scope.id = "48752";
+				$scope.firstName = "Gabriele";
+				$scope.lastName = "Cassano";
+				$scope.birthdate = "25/10/1978"
+			});
+			</script>
+		</body>
+	</html>

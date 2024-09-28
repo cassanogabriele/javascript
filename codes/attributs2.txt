@@ -1,0 +1,21 @@
+﻿HTML 
+****
+<div class="center paragraphs-size">																
+	<p id="para">Ceci est un 1er paragraphe</p>
+	<p id="para">Ceci est un 2ème paragraphe</p>
+	<p>Ceci est un 3ème paragraphe</p>
+	<p>Ceci est un 4ème paragraphe</p>
+	<p>Ceci est un paragraphe caché</p>				
+</div>
+
+
+JQUERY 
+******
+<script>
+(function($){
+$('document').ready(function(){	
+	// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+	$("p[id=para]").css("border","2px solid red");
+	});
+})(jQuery);		
+</script>

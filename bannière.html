@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bannière </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<link rel="stylesheet" href="css/main.css">  
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+		<script language="JavaScript">
+		<!-- debut du script
+		var message3, message3b, chaine3 = "", chainePart3, delai3, ban3;
+			function banniere3(delai) {
+				delai3 = delai;
+				if (chaine3.length == 0) {
+				chaine3 = " ";
+				message3b = message3;
+				chainePart3 = "";
+			} else if (chaine3.length == 1) {
+				while (message3b.substring(0, 1) == " ") {
+					chainePart3 = chainePart3 + chaine3;
+					chaine3 = message3b.substring(0, 1);
+					message3b = message3b.substring(1, message3b.length);
+				}
+			chainePart3 = chainePart3 + chaine3;
+			chaine3 = message3b.substring(0, 1);
+			message3b = message3b.substring(1, message3b.length);
+		} else chaine3 = chaine3.substring(10, chaine3.length);
+			document.bandeau3.Fbanniere3.value = chainePart3 + chaine3;
+			ban3 = window.setTimeout('banniere3(delai3)',delai);
+		}		
+		</script>
+    </head>
+	
+        <body onLoad="message3='Rock and roll'; banniere3(150);" onUnload="clearTimeout(ban3)">
+			<form name="bandeau3">			
+				<input id="banniere" type="text" name="Fbanniere3" size="40">
+			</form>		
+		</body>   
+</html>

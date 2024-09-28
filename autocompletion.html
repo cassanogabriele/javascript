@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Système d'auto-complétion</title>
+    <style>
+      body {
+        margin: auto;
+        padding-top: 80px;
+        width: 300px;
+        font-family: sans-serif;
+        font-size: 0.8em;
+        background-color: #F5F5F5;
+      }
+
+      input[type="submit"] {
+        margin-left: 10px;
+        width: 50px; height: 26px;
+      }
+
+      #search {
+        padding: 2px 4px;
+        width: 220px; height: 22px;
+        border: 1px solid #AAA;
+      }
+
+      #search:hover, #search:focus {
+        border-color: #777;
+      }
+
+      #results {
+        display: none;
+        width: 228px;
+        border: 1px solid #AAA;
+        border-top-width: 0;
+        background-color: #FFF;
+      }
+
+      #results div {
+        width: 220px;
+        padding: 2px 4px;
+        text-align: left;
+        border: 0;
+        background-color: #FFF;
+      }
+
+      #results div:hover, .result_focus {
+        background-color: #DDD !important;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <input id="search" type="text" autocomplete="off" />
+
+    <div id="results"></div>
+
+    <script>
+
+    (function() {
+
+        var searchElement = document.getElementById('search'),
+            results = document.getElementById('results'),
+            selectedResult = -1, 
+            previousRequest, 
+            previousValue = searchElement.value; 
+
+        function getResults(keywords) {           
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', './recherche.php?s='+ encodeURIComponent(keywords));
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {                    
+                    displayResults(xhr.responseText);
+                }
+            };
+
+            xhr.send(null);
+
+            return xhr;
+
+        }
+
+        function displayResults(response) { 
+            results.style.display = response.length ? 'block' : 'none'; 
+			
+            if (response.length) { 
+                response = response.split('|');
+                var responseLen = response.length;
+
+                results.innerHTML = ''; 
+
+                for (var i = 0, div ; i < responseLen ; i++) {
+
+                    div = results.appendChild(document.createElement('div'));
+                    div.innerHTML = response[i];
+                    
+                    div.onclick = function() {
+                        chooseResult(this);
+                    };
+
+                }
+
+            }
+
+        }
+
+        function chooseResult(result) { 
+          
+            searchElement.value = previousValue = result.innerHTML;
+            results.style.display = 'none'; 
+            result.className = ''; 
+            selectedResult = -1; 
+            searchElement.focus();
+
+        }
+
+        searchElement.onkeyup = function(e) {          
+            e = e || window.event; 
+
+            var divs = results.getElementsByTagName('div');
+
+            if (e.keyCode == 38 && selectedResult > -1) {               
+                divs[selectedResult--].className = '';
+                
+                if (selectedResult > -1) { 
+                    divs[selectedResult].className = 'result_focus';
+                }
+
+            } else if (e.keyCode == 40 && selectedResult < divs.length - 1) { // Si la touche pressée est la flèche "bas"
+              
+                results.style.display = 'block'; 
+
+                if (selectedResult > -1) { 
+                    divs[selectedResult].className = '';
+                }
+
+                divs[++selectedResult].className = 'result_focus';
+            } else if (e.keyCode == 13 && selectedResult > -1) {               
+                chooseResult(divs[selectedResult]);
+
+            } else if (searchElement.value != previousValue) { 
+                previousValue = searchElement.value;
+
+                if (previousRequest && previousRequest.readyState < 4) {
+                    previousRequest.abort(); 
+                }
+
+                previousRequest = getResults(previousValue); 
+
+                selectedResult = -1; 
+            }
+        };
+    })();
+    </script>
+  </body>
+</html>

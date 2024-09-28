@@ -1,0 +1,11 @@
+table{ margin-left:auto;margin-right:auto;}
+
+.banner {
+	font-size : 3em;
+	font : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-variant : small-caps;
+}
+
+td {
+	border : solid Green thin;
+}

@@ -1,0 +1,19 @@
+﻿<!-- jQuery -->
+<script>
+(function($){
+(function($){
+	$('document').ready(function(){	
+		// Sélectionne les paragraphes qui ont un attribut 'class' et leur mettre une bordure rouge
+		$(":checkbox").before(":CHECKBOX ");
+	});
+})(jQuery);		
+</script>
+
+
+<!-- HTML -->
+<div class="center">																
+	<form action="/action_page.php">
+		<input type="checkbox" name="vehicle" value="Bike">J'ai un vélo<br>
+		<input type="checkbox" name="vehicle" value="Car" checked> J'ai une voiture<br>	
+	</form> 
+</div>

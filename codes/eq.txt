@@ -1,0 +1,22 @@
+﻿<!-- jQuery -->			
+<script type="text/javascript">
+(function($){
+	$('document').ready(function(){	
+		// eq :sélectionne un élément ayant un numéro d'index spécifique
+		$("p").eq(2).css("border","2px solid red");
+	});
+})(jQuery);	
+</script>
+
+<!-- HTML -->	
+<div class="panel-body">
+	<div class="cv-wrapper">
+		<div class="center">																
+			<p>Ceci est un 1er paragraphe</p>
+			<p>Ceci est un 2ème paragraphe</p>
+			<p>Ceci est un 3ème paragraphe</p>
+			<p>Ceci est un 4ème paragraphe</p>			
+		</div>
+	</div>												
+</div>
+	

@@ -1,0 +1,4 @@
+﻿<script type="text/javascript">										
+	var x = etat_compteur();
+	document.write("<p class='paragraphs-size'>Ceci est votre <b>" + x + "ème<\/b> visite sur cette page!<\/p>");										
+</script>

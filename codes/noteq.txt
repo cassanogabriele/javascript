@@ -1,0 +1,22 @@
+﻿<!-- jQuery -->			
+<script type="text/javascript">
+(function($){
+	$('document').ready(function(){	
+		// Sélectionne tous les paragraphes sauf celui qui à l'indice 2 (ici, c'est le troisième paragraphe) 
+		$("p:not(eq(2))").css("border","2px solid red");
+	});
+})(jQuery);	
+</script>
+
+<!-- HTML -->	
+<div class="panel-body">
+	<div class="cv-wrapper">
+		<div class="center">																
+			<p>Ceci est un 1er paragraphe</p>
+			<p>Ceci est un 2ème paragraphe</p>
+			<p>Ceci est un 3ème paragraphe</p>
+			<p>Ceci est un 4ème paragraphe</p>			
+		</div>
+	</div>												
+</div>
+	

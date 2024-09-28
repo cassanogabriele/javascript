@@ -1,0 +1,118 @@
+﻿<!-- jQuery -->
+<script>
+(function($){
+	$('document').ready(function(){	
+		// Sélectionner les paragraphes contenant un 'span' et leur mettre une bordure rouge
+		$('p span').css('border', '2px solid red');
+		// Sélection l'élément (ul) qui à l'id 'list1' et lui mettre une bordure rouge 
+		$('#list1').css('border','2px solid red');
+		// Sélectionner tous les éléments qui ont pour classe "a" et leur mettre une bordure rouge 
+		$('.a').css('border','2px solid red');
+		// Sélectionner tous les paragraphes et les élements de la liste ayant pour class "b" et leur mettre une bordure
+		$('p .d, li.b').css('border', '2px solid red');
+		// Sélectionner l'élément "p" directement précédé d'un élément ul et leur mettre une bordure rouge
+		$('ul + p').css('border','2px solid red');
+											
+	});
+})(jQuery);
+</script>
+
+
+<!-- HTML -->
+<div class="panel-body">
+	<div class="cv-wrapper">
+		<div class="center">
+			<h2>Sélectionner tous les paragraphes contenant un "span" et leur mettre une bordure rouge</h2>
+		</div>
+								
+		<div class="center" style="margin-top:25px;">
+			<div id="container">											
+				<p><span>Ceci est un 1er paragraphe</span></p>
+				<p>Ceci est un 2ème paragraphe</p>
+				<p><span>Ceci est un 3ème paragraphe</span></p>
+				<p>Ceci est un 4ème paragraphe</p>				
+			</div>
+		</div>
+									
+		<div class="center">
+			<h2>Sélectionner tous les éléments d'une liste ayant pour id celui sélectionné par jQuery et leur mettre une bordure rouge</h2>
+		</div>
+									
+		<div class="center" style="margin-top:25px;">
+			<div id="container">											
+				<ul id="list1">
+					<li>Élément de liste 1</li>
+					<li>Élément de liste 2</li>
+					<li>Élément de liste 3</li>
+					<li">Élément de liste 4</li>
+				</ul>
+			</div>
+		</div>
+									
+		<div class="center">
+			<h2>Sélectionner tous les éléments qui ont pour classe "a" et leur mettre une bordure rouge</h2>
+		</div>
+									
+		<div class="center" style="margin-top:25px;">
+			<div id="container">											
+				<p class="a">Ceci est un 1er paragraphe</p>
+				<p>Ceci est un 2ème paragraphe</p>
+				<p>Ceci est un 3ème paragraphe</p>
+				<p class="a">Ceci est un 4ème paragraphe</p>											
+			</div>
+		</div>
+									
+		<div class="center">
+			<h2>Sélectionner tous les élements de la liste ayant pour class "b" et leur mettre une bordure</h2>
+		</div>
+									
+		<div class="center" style="margin-top:25px;">
+			<div id="container">
+				<ul id="list2">
+					<li class="b">Élément de liste 1</li>
+					<li>Élément de liste 2</li>
+					<li>Élément de liste 3</li>
+					<li class="b">Élément de liste 4</li>											
+				</ul>											
+			</div>
+		</div>	
+									
+		<div class="center">
+			<h2>Sélectionner l'élément "p" directement précédé d'un élément ul et leur mettre une bordure rouge</h2>
+		</div>
+									
+		<div class="center" style="margin-top:25px;">
+			<div id="container">
+				<ul id="list3">
+					<li>Élément de liste 1</li>
+					<li>Élément de liste 2</li>
+					<li>Élément de liste 3</li>
+					<li>Élément de liste 4</li>												
+				</ul>
+				<p>Ceci est un 1er paragraphe</p>
+				<p class="d">Ceci est un 2ème paragraphe</p>
+				<p class="d">Ceci est un 3ème paragraphe</p>
+				<p>Ceci est un 4ème paragraphe</p>											
+			</div>
+		</div>
+									
+		<div class="center">
+			<h2>Sélectionner les éléments "p" ayant pour class "c" précédent un élément "ul" et leur mettre une bordure rouge</h2>
+		</div>
+									
+		<div class="center" style="margin-top:25px;">
+			<div id="container">
+				<ul id="list3">
+					<li>Élément de liste 1</li>
+					<li>Élément de liste 2</li>
+					<li>Élément de liste 3</li>
+					<li>Élément de liste 4</li>												
+				</ul>
+				<p>Ceci est un 1er paragraphe</p>
+				<p class="c">Ceci est un 2ème paragraphe</p>
+				<p>Ceci est un 3ème paragraphe</p>
+				<p>Ceci est un 4ème paragraphe</p>
+				<p>Ceci est un paragraphe caché</p>
+			</div>
+		</div>
+		

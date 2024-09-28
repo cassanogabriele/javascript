@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Effects</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //$("#div5").hide();
+    $("button").click(function(){
+        $("#div1").fadeOut();
+        $("#div2").fadeOut("slow");
+        $("#div3").fadeOut(3000);
+        $("#div4").fadeTo("slow",.5);//percentage of opacity
+        //$("#div5").fadeToggle();
+        $("#div5").hide("slow",toto);//callback
+        //$("#div5").slideUp();
+        //$("#div5").slideDown();//hide en début de code alors que ici slideDown()  jQuery adapte
+        
+        //$("#div5").slideToggle();
+
+    });
+    function toto(){
+    	$("#div5").show("slow");//pas besoin de callback si on relance juste en dessous jQuery les fait en séquence
+
+    }//$("#div5").hide("slow"); jQuery les fait en séquence
+     //$("#div5").show("slow");
+
+
+});
+</script>
+</head>
+<body>
+
+
+<button>Cliquez ici</button><br><br>
+<div id="div5" style="width:80px;height:80px;background-color:blue;"></div><br>
+<div id="div4" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:hotpink;"></div><br>
+
+<div id="div2" style="width:80px;height:80px;background-color:lime;"></div><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:orange;"></div><br>
+
+
+
+
+
+</body>
+</html>
+
+

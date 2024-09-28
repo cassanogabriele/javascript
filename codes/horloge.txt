@@ -1,0 +1,142 @@
+// Le CSS
+<style>
+body{
+	background-color:yellow;
+}
+	
+/*
+On met l'horloge en position: relative;. Cela permet de pouvoir positionner les aiguilles en fonction de l'emplacement de l'horloge.
+On met les aiguilles en position: absolute;.
+On met le cadran : background: url('cadran.png');.
+On agrandit l'horloge pour que le cadran soit entier : height: 567px; width: 567px;.
+On met le bas des aiguilles au milieu de l'horloge : bottom: 283px;.
+On règle l'abscisse des aiguilles :  aiguille des secondes : left: 283px; pour les deux autres : left : 278px;.
+On place le centre de rotation des aiguilles : transform-origin: bottom center; (je n'ai pas mis les suffixes).
+On met une bordure à l'horloge et on l'arrondit pour qu'elle soit circulaire : border: 1px solid black; border-radius: 284px;.
+On indique ici la valeur de l'arrondi en pixels parce que webkit n'accepte pas la valeur en pourcentage.
+*/	
+.aig{	
+	position: absolute;
+    bottom: 283px;
+    -moz-transform-origin: bottom center;
+    -webkit-transform-origin: bottom center;
+    -o-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center;
+}  
+
+#horloge{        
+	margin-top:125px;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+    height: 567px;
+    width: 567px;
+    border: 1px solid black;
+    -moz-border-radius: 284px;
+    -webkit-border-radius: 284px;
+    -o-border-radius: 284px;
+    -ms-border-radius: 284px;
+     border-radius: 284px;
+ }
+</style>
+
+// La JavaScript
+<script type="text/javascript">
+// Pour que le code soit compatible avec tous les navigateurs, il ne faut, d'abord, pas afficher les aiguilles et le cadran.
+window.onload = function()
+{      
+    // On n'exécute le JavaScript ue si le navigateur est compatible
+	if(document.getElementsByTagName('body')[0].style.MozTransform == ''
+         || document.getElementsByTagName('body')[0].style.WebkitTransform == ''
+         || document.getElementsByTagName('body')[0].style.OTransform == ''
+         || document.getElementsByTagName('body')[0].style.OTransform
+         || document.getElementsByTagName('body')[0].style.msTransform == ''
+         || document.getElementsByTagName('body')[0].style.transform == '')
+      {
+         function aig()
+         {
+            aigS.style.MozTransform    = 'rotate(' + (time * 6) + 'deg)';
+            aigS.style.WebkitTransform = 'rotate(' + (time * 6) + 'deg)';
+            aigS.style.OTransform      = 'rotate(' + (time * 6) + 'deg)';
+            aigS.style.msTransform     = 'rotate(' + (time * 6) + 'deg)';
+            aigS.style.transform       = 'rotate(' + (time * 6) + 'deg)';
+            aigM.style.MozTransform    = 'rotate(' + Math.round(time / 10) + 'deg)';
+            aigM.style.WebkitTransform = 'rotate(' + Math.round(time / 10) + 'deg)';
+            aigM.style.OTransform      = 'rotate(' + Math.round(time / 10) + 'deg)';
+            aigM.style.msTransform     = 'rotate(' + Math.round(time / 10) + 'deg)';
+            aigM.style.transform       = 'rotate(' + Math.round(time / 10) + 'deg)';
+            aigH.style.MozTransform    = 'rotate(' + Math.round(time / 120) + 'deg)';
+            aigH.style.WebkitTransform = 'rotate(' + Math.round(time / 120) + 'deg)';
+            aigH.style.OTransform      = 'rotate(' + Math.round(time / 120) + 'deg)';
+            aigH.style.msTransform     = 'rotate(' + Math.round(time / 120) + 'deg)';
+            aigH.style.transform       = 'rotate(' + Math.round(time / 120) + 'deg)';
+         }
+
+		// On affiche les aiguilles et le cadran en JavaScript via DOM		
+         var aigS = document.createElement('img');
+            aigS.setAttribute('src'  , 'aigS.png');
+            aigS.setAttribute('class', 'aig');
+            aigS.setAttribute('alt'  , 'aiguille des secondes');
+            aigS.setAttribute('style', 'left: 283px;');
+
+         var aigM = document.createElement('img');
+            aigM.setAttribute('src'  , 'aigM.png');
+            aigM.setAttribute('class', 'aig');
+            aigM.setAttribute('alt'  , 'aiguille des minutes');
+            aigM.setAttribute('style', 'left: 278px;');
+
+         var aigH = document.createElement('img');
+            aigH.setAttribute('src'  , 'aigH.png');
+            aigH.setAttribute('class', 'aig');
+            aigH.setAttribute('alt'  , 'aiguille des heures');
+            aigH.setAttribute('style', 'left: 278px;');
+
+         var horloge = document.getElementById('horloge');
+            horloge.appendChild(aigS);
+            horloge.appendChild(aigM);
+            horloge.appendChild(aigH);
+            horloge.setAttribute('style', 'background: url(\'cadran.png\');');
+
+		// On détermine le nombre de secondes écoulées depuis le début de la journée
+        var d    = new Date();
+        var time = d.getSeconds() + 60 * d.getMinutes() + 3600 * d.getHours();
+        aig();
+
+        setInterval(function() {
+            time++;
+            aig();
+         }, 1000);
+      }
+   };
+   
+   function aig()
+{
+   aigS.style.MozTransform    =
+   aigS.style.WebkitTransform =
+   aigS.style.OTransform      =
+   aigS.style.msTransform     =
+   aigS.style.transform       = 'rotate(' + (time * 6) + 'deg)';
+   aigM.style.MozTransform    =
+   aigM.style.WebkitTransform =
+   aigM.style.OTransform      =
+   aigM.style.msTransform     =
+   aigM.style.transform       = 'rotate(' + Math.round(time / 10) + 'deg)';
+   aigH.style.MozTransform    =
+   aigH.style.WebkitTransform =
+   aigH.style.OTransform      =
+   aigH.style.msTransform     =
+   aigH.style.transform       = 'rotate(' + Math.round(time / 120) + 'deg)';
+}
+
+setInterval(function() {
+   d    = new Date();
+   time = d.getSeconds() + 60 * d.getMinutes() + 3600 * d.getHours();
+}, 60000);
+   </script>
+</head>
+<body>
+   <div id="horloge">
+   </div>
+</body>
+</html>

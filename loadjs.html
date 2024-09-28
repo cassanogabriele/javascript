@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+
+		<head>
+		<title>Dynamic Script Loading</title>
+		<script type="text/javascript">
+		<!--
+		function send() {
+			var DSLScript  = document.createElement("script");
+			DSLScript.src  = "js/DynamicScriptLoading_1.js";
+			DSLScript.type = "text/javascript";
+			document.body.appendChild(DSLScript);
+			document.body.removeChild(DSLScript);
+		}
+
+		function callback(sMessage) {
+			alert(sMessage);
+		}
+		//-->
+		</script>
+		</head>
+
+		<body>
+			<input type="button" value="Envoyer la requ&ecirc;te" onclick="send()" />
+
+		</body>
+
+	</html>
